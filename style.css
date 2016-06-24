@@ -1,8 +1,11 @@
 @font-face {
-    font-family: aubrey;
-    src: url(AUBREY1__.TTF);
+  font-family: StreetvertisingBold;
+  src: url(StreetvertisingBold.ttf);
 }
-
+@font-face {
+  font-family: StreetvertisingMedium;
+  src: url(StreetvertisingMedium.ttf);
+}
 body {
   padding: 0;
 }
@@ -41,24 +44,36 @@ body {
 .container-narrow > hr {
   margin: 30px 0;
 }
+
+/* Custom page body */
+
+.name {
+  position: relative;
+  height: 10vh;
+}
 .circle {
+  text-align: center;
+  top: 10vh;
   position: absolute;
-  top: 20;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  height: 85vh;
-  width: 85vh;
+  z-index: 100;
   background-color: #038A9D;
   border-radius: 50%;
+  background-size: 100%;
 }
-.circle .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+.parent {
+  display: table;
+  table-layout: fixed;
 }
-h1, h2, .cv, .projets,.left, .right{
-  font-family: "aubrey";
+.child {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color:#E6F4F6;
+  font-size: 40px;
+  float: none;
+}
+h1, h2 {
+  font-family: "StreetvertisingBold";
   letter-spacing: 10px;
   position: absolute;
   font-weight: bolder;
@@ -68,59 +83,49 @@ h1, h2, .cv, .projets,.left, .right{
   right: 0;
   margin: auto;
   text-align: center;
-  font-size:30px;
-  color:#E6F4F6;
+  font-size: 36px;
+  color: #E6F4F6;
 }
+.separation{
+	clear: both;
+	position: absolute;
+	height: 80vh;
+	width : 5px;
+	background: #E6F4F6;
+	}
 .left, .right {
-  top: 235px;
-  font-size:60px;
+  font-family: "StreetvertisingMedium";
+  font-size: 28px;
   font-weight: lighter;
 }
-h2{
-  top: 50px;
-}
-.cv, .projets {
-  letter-spacing: 5px;
-  top: 260px;
-  font-size: 18px;
-  color:#E6F4F6;
-  left:55px;
-  right:50px;
-}
-.cv, .left {
+.left {
   text-align: left;
 }
-.projets, .right {
+.right {
   text-align: right;
 }
-/* =============================================================================
-   My CSS
-   ========================================================================== */
 
-/* ---- base ---- */
+/* ---- particles-js ---- */
 
-html,body{
-	width:99.9%;
-	height:99.9%;
-	background:#000E10;
+html, body {
+  width: 99.9%;
+  height: 90vh;
+  background: #000E10;
 }
-
-html{
+html {
   -webkit-tap-highlight-color: red;
 }
-
-body{
-  font:normal 75% Arial, Helvetica, sans-serif;
+body {
+  font: normal 75% Arial, Helvetica, sans-serif;
 }
-
-canvas{
-  display:block;
-  vertical-align:bottom;
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
 
 /* ---- particles.js container ---- */
 
-#particles-js{
+#particles-js {
   width: 100%;
   height: 100%;
   background-color: #000E10;
@@ -147,7 +152,19 @@ canvas{
   }
   /* Remove the bottom border on the circle for visual effect */
   .circle {
-    width: 90vw;
-    height: 90vw;
+    top: 30vh;
   }
+  .name {
+    height: 20vh;
+  }
+  html, body {
+    width: 99.9%;
+    height: 80vh;
+    background: #000E10;
+  }
+}
+@media screen and (max-width: 1440) {
+  .separation{
+  	height: 90vh;
+  	}
 }

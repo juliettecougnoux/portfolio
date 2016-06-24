@@ -1,18 +1,20 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <meta name="description" content="porfolio de Juliette Cougnoux">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!--[if lte IE 8]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <!-- <div class="header">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta name="description" content="porfolio de Juliette Cougnoux">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--[if lte IE 8]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <!-- <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -39,72 +41,47 @@
       </div>
     </div> -->
 
-    <!-- particles.js container -->
-    <div id="particles-js">
-      <div class="container princ">
+  <!-- particles.js container -->
+  <div id="particles-js">
+    <div class="container-fluid princ">
+      <div class="row">
         <div class="col-xs-12">
           <h1 class="name">
-            Juliette Cougnoux
-          </h1>
-          <h2>Portfolio</h2>
+            Juliette Cougnoux - Portfolio</h1>
         </div>
-        <div class="row parent">
-          <div class="circle">
-            <div class="left">
-              <
-            </div>
-            <div class="cv">Mon CV</div>
-            <div class="projets">Mes projets</div>
-            <div class="right">
-              >
-            </div>
+        <div class="col-xs-12 col-md-push-3 col-md-6 circle">
+          <div class="col-xs-12 parent">
+            <div class="col-xs-6 child left cv">< Mon CV</div>
+            <hr class="hidden-xs hidden-sm separation" />
+            <div class="col-xs-6 child right">Mes projets ></div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- scripts -->
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+  <!-- scripts -->
+  <script src="jquery/dist/jquery.js"></script>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+  <script src="script.js"></script>
 
-    <!-- stats.js -->
-    <script src="stats.js"></script>
-    <script>
-      var count_particles,
-        stats,
-        update;
-      stats = new Stats;
-      stats.setMode(0);
-      stats.domElement.style.position = 'absolute';
-      stats.domElement.style.left = '0px';
-      stats.domElement.style.top = '0px';
-      document.body.appendChild(stats.domElement);
-      count_particles = document.querySelector('.js-count-particles');
-      update = function() {
-        stats.begin();
-        stats.end();
-        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-      };
-      requestAnimationFrame(update);
-    </script>
 
-    <!--
+  <!--
     <div class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from Juliette Cougnoux</p>
       </div>
     </div> -->
 
-    <script src="jquery/dist/jquery.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.js"></script>
-    <script src="jquery/dist/jquery.min.js"></script>
-    <script src="jquery/dist/jquery.lettering-0.6.1.min.js"></script>
-    <script src="jquery/dist/jquery.lettering-0.6.min.js"></script>
-    <script src="particles.js"></script>
-    <script src="particles.min.js"></script>
+  <script src="jquery/dist/jquery.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.js"></script>
+  <script src="jquery/dist/jquery.min.js"></script>
+  <script src="jquery/dist/jquery.lettering-0.6.1.min.js"></script>
+  <script src="jquery/dist/jquery.lettering-0.6.min.js"></script>
+  <script src="particles.js"></script>
+  <script src="particles.min.js"></script>
 
-  </body>
+</body>
+
 </html>
