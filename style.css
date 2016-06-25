@@ -68,6 +68,11 @@
   background-color: #000E10;
   overflow-y:auto;
 }
+.right:hover, .left:hover {
+  color:#000E10;
+  text-decoration: overline;
+}
+
 .active {
   transition: 2s;
   margin-left: 0;
@@ -168,7 +173,6 @@ canvas {
   display: block;
   vertical-align: bottom;
 }
-
 /* ---- particles.js container ---- */
 
 #particles-js {
@@ -208,7 +212,6 @@ canvas {
     width: 99.9%;
     height: 80vh;
     background: #000E10;
-    overflow-y: scroll;
   }
   .child, i {
     font-size: 20px;
