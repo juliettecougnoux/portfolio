@@ -68,12 +68,8 @@
   background-color: #000E10;
   overflow-y:auto;
 }
-.active1 {
-  transition: 1.5s;
-  margin-left: 0;
-}
-.active2 {
-  transition: 1.5s;
+.active {
+  transition: 2s;
   margin-left: 0;
 }
 .name {
@@ -112,13 +108,16 @@ h1, h2 {
   display: table;
   table-layout: fixed;
 }
-.child {
-  display: table-cell;
+.child, i {
+  display: table-cell !important;
   vertical-align: middle;
   text-align: center;
   color:#E6F4F6;
   font-size: 40px;
   float: none;
+}
+i{
+  transform: rotate(-46deg);
 }
 .left, .right {
   font-family: "StreetvertisingMedium";
@@ -133,18 +132,20 @@ h1, h2 {
 }
 /*animation for the div parent when click on it*/
 .rotateleft{
-  animation:rotateleft 2s linear;
+  animation:rotateleft 1s linear;
+  animation-fill-mode:forwards;
 }
 @keyframes rotateleft{
-  0%{  transform: rotate(0deg);}
-  100%{  transform: rotate(-360deg);}
+  0%{  transform: rotate(-46deg);}
+  100%{  transform: rotate(-136deg);}
 }
 .rotateright{
-  animation:rotateright 2s linear;
+  animation:rotateright 1s linear;
+  animation-fill-mode: forwards;
 }
 @keyframes rotateright{
-  0%{  transform: rotate(0deg);}
-  100%{  transform: rotate(360deg);}
+  0%{  transform: rotate(-46deg);}
+  100%{  transform: rotate(44deg);}
 }
 /* ---- particles-js ---- */
 
@@ -207,6 +208,9 @@ canvas {
     width: 99.9%;
     height: 80vh;
     background: #000E10;
+  }
+  .child, i {
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1920px) {
