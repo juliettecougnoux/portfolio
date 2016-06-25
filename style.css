@@ -186,6 +186,6 @@ canvas {
 }
 @media screen and (min-width: 1920px) {
   .circle {
-    top: 45vh;
+    top: 40vh;
   }
 }
