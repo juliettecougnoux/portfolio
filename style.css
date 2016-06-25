@@ -214,6 +214,9 @@ canvas {
     background: #000E10;
     overflow-y: scroll;
   }
+  canvas {
+    overflow-y: scroll;
+  }
   .child, i {
     font-size: 20px;
   }
