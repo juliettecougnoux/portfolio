@@ -212,6 +212,7 @@ canvas {
     width: 99.9%;
     height: 80vh;
     background: #000E10;
+    overflow-y: scroll;
   }
   .child, i {
     font-size: 20px;

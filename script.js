@@ -27,7 +27,6 @@ function squareThis(element, ratio, minLimit) {
 }
 
 $(document).ready(function() {
-  console.log($(window).height());
   squareThis('.circle');
   squareThis('.parent');
   $(".left").click(function() {
@@ -52,21 +51,4 @@ $(document).ready(function() {
       }
     });
   });
-  if ($(window).width() < $(window).height()) {
-    console.log("coucou");
-    $('body').css('overflow-y', 'scroll');
-    $('html').css('overflow-y', 'scroll');
-  }
-});
-
-$( window ).resize(function() {
-    if ($(window).width() < $(window).height()) {
-    console.log("coucou");
-    $('body').css('overflow-y', 'scroll');
-    $('html').css('overflow-y', 'scroll');
-  }
-  else {
-    $('body').css('overflow', 'hidden');
-    $('html').css('overflow', 'hidden');
-  }
 });
