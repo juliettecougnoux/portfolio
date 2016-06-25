@@ -32,11 +32,23 @@ $(document).ready(function() {
   $(".left").click(function() {
     $("i").addClass("rotateleft").delay(1000).queue(function() {
       $(".cv").addClass("active");
+      if (window.history && window.history.pushState) {
+        window.history.pushState('forward', null, './#cv');
+        $(window).on('popstate', function() {
+          location.reload();
+        });
+      }
     });
   });
   $(".right").click(function() {
     $("i").toggleClass("rotateright").delay(1000).queue(function() {
       $(".projets").addClass("active");
+      if (window.history && window.history.pushState) {
+        window.history.pushState('forward', null, './#projets');
+        $(window).on('popstate', function() {
+          location.reload();
+        });
+      }
     });
   });
 });
