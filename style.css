@@ -1,3 +1,5 @@
+/* Declaration of font-face */
+
 @font-face {
   font-family: StreetvertisingBold;
   src: url(StreetvertisingBold.ttf);
@@ -6,11 +8,8 @@
   font-family: StreetvertisingMedium;
   src: url(StreetvertisingMedium.ttf);
 }
-body {
-  padding: 0;
-}
 
-/* Everything but the circle gets side spacing for mobile first views */
+/* Everything gets side spacing for mobile first views */
 
 .header, .footer {
   padding-left: 15px;
@@ -45,32 +44,11 @@ body {
   margin: 30px 0;
 }
 
-/* Custom page body */
-
+/* Custom page center */
+/*Title and name*/
 .name {
   position: relative;
   height: 10vh;
-}
-.circle {
-  text-align: center;
-  top: 10vh;
-  position: absolute;
-  z-index: 100;
-  background-color: #038A9D;
-  border-radius: 50%;
-  background-size: 100%;
-}
-.parent {
-  display: table;
-  table-layout: fixed;
-}
-.child {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  color:#E6F4F6;
-  font-size: 40px;
-  float: none;
 }
 h1, h2 {
   font-family: "StreetvertisingBold";
@@ -85,6 +63,29 @@ h1, h2 {
   text-align: center;
   font-size: 36px;
   color: #E6F4F6;
+}
+/* the Circle */
+.circle {
+  text-align: center;
+  top: 10vh;
+  position: absolute;
+  z-index: 100;
+  background-color: #038A9D;
+  border-radius: 50%;
+  background-size: 100%;
+}
+/*and inside it*/
+.parent {
+  display: table;
+  table-layout: fixed;
+}
+.child {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color:#E6F4F6;
+  font-size: 40px;
+  float: none;
 }
 .separation{
 	clear: both;
@@ -104,6 +105,7 @@ h1, h2 {
 .right {
   text-align: right;
 }
+/*animation for the div parent when click on it*/
 .rotateleft{
   animation:rotateleft 2s linear;
 }
@@ -163,7 +165,6 @@ canvas {
   .header {
     margin-bottom: 30px;
   }
-  /* Remove the bottom border on the circle for visual effect */
   .circle {
     top: 30vh;
   }
@@ -176,7 +177,7 @@ canvas {
     background: #000E10;
   }
 }
-@media screen and (max-width: 1440) {
+@media screen and (min-height: 700px) {
   .separation{
   	height: 90vh;
   	}
