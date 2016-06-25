@@ -184,8 +184,3 @@ canvas {
     background: #000E10;
   }
 }
-@media screen and (min-width: 1920px) {
-  .circle {
-    top: 40vh;
-  }
-}
