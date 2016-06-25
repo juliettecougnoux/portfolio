@@ -213,7 +213,6 @@ canvas {
   .child, i {
     font-size: 20px;
   }
-
 }
 @media screen and (min-width: 1920px) {
   .circle {
