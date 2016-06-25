@@ -50,8 +50,35 @@
   margin:0 !important;
 }
 /*Title and name*/
+.cv {
+  position:absolute;
+  width: 100vw;
+  height:100vh;
+  z-index: 1000;
+  margin-left: -100vw;
+  background-color: #000E10;
+  overflow-y:auto;
+}
+.projets {
+  position:absolute;
+  width: 100vw;
+  height:100vh;
+  z-index: 1000;
+  margin-left: 100vw;
+  background-color: #000E10;
+  overflow-y:auto;
+}
+.active1 {
+  transition: 1.5s;
+  margin-left: 0;
+}
+.active2 {
+  transition: 1.5s;
+  margin-left: 0;
+}
 .name {
-  position: relative;
+  z-index: 100;
+  position: absolute;
   margin: 5vh;
   height: 10vh;
 }
@@ -81,7 +108,6 @@ h1, h2 {
 }
 /*and inside it*/
 .parent {
-  width:100%
   vertical-align: middle;    /* vertical alignment of the inline element */
   display: table;
   table-layout: fixed;
@@ -94,13 +120,6 @@ h1, h2 {
   font-size: 40px;
   float: none;
 }
-.separation{
-	clear: both;
-	position: absolute;
-	height: 75vh;
-	width : 5px;
-	background: #E6F4F6;
-	}
 .left, .right {
   font-family: "StreetvertisingMedium";
   font-size: 28px;
@@ -130,9 +149,10 @@ h1, h2 {
 /* ---- particles-js ---- */
 
 html, body {
-  width: 99.9%;
-  height: 80vh;
+  width:100%;
+  height: 100vh;
   background: #000E10;
+  overflow: hidden;
 }
 html {
   -webkit-tap-highlight-color: red;
@@ -141,6 +161,9 @@ body {
   font: normal 75% Arial, Helvetica, sans-serif;
 }
 canvas {
+  width:100vh;
+  height: 85vh;
+  margin-top: 15vh;
   display: block;
   vertical-align: bottom;
 }
@@ -149,12 +172,14 @@ canvas {
 
 #particles-js {
   width: 100%;
-  height: 100%;
+  height:85vh;
   background-color: #000E10;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  position:absolute;
+  z-index: 10;
 }
 
 /* Responsive: Portrait tablets and up */

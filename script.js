@@ -32,11 +32,13 @@ $(document).ready(function() {
   $(".left").click(function() {
     $(".parent").addClass("rotateleft").delay(2000).queue(function() {
       $(this).removeClass("rotateleft").dequeue();
+      $(".cv").delay(3000).addClass("active1");
     });
   });
   $(".right").click(function() {
     $(".parent").toggleClass("rotateright").delay(2000).queue(function() {
       $(this).removeClass("rotateright").dequeue();
+      $(".projets").delay(3000).addClass("active2");
     });
   });
 });
