@@ -113,13 +113,16 @@ h1, h2 {
   display: table;
   table-layout: fixed;
 }
-.child, i {
+.child {
   display: table-cell !important;
   vertical-align: middle;
   text-align: center;
   color:#E6F4F6;
   font-size: 40px;
   float: none;
+}
+.fa{
+  font-size: 70px;  
 }
 i{
   transform: rotate(-46deg);
