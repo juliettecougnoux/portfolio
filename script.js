@@ -30,9 +30,13 @@ $(document).ready(function() {
   squareThis('.parent');
   squareThis('.parent');
   $(".left").click(function() {
-    $(".parent").toggleClass("rotateleft");
+    $(".parent").addClass("rotateleft").delay(2000).queue(function() {
+      $(this).removeClass("rotateleft").dequeue();
+    });
   });
   $(".right").click(function() {
-    $(".parent").toggleClass("rotateright");
+    $(".parent").toggleClass("rotateright").delay(2000).queue(function() {
+      $(this).removeClass("rotateright").dequeue();
+    });
   });
 });
