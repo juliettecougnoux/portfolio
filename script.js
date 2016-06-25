@@ -27,7 +27,7 @@ function squareThis(element, ratio, minLimit) {
 }
 
 $(document).ready(function() {
-  squareThis('.parent');
+  squareThis('.circle');
   squareThis('.parent');
   $(".left").click(function() {
     $(".parent").addClass("rotateleft").delay(2000).queue(function() {

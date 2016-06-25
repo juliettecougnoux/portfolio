@@ -45,9 +45,14 @@
 }
 
 /* Custom page center */
+.nopadding {
+  padding: 0!important;
+  margin:0 !important;
+}
 /*Title and name*/
 .name {
   position: relative;
+  margin: 5vh;
   height: 10vh;
 }
 h1, h2 {
@@ -67,7 +72,7 @@ h1, h2 {
 /* the Circle */
 .circle {
   text-align: center;
-  top: 10vh;
+  top: 25vh;
   position: absolute;
   z-index: 100;
   background-color: #038A9D;
@@ -76,6 +81,8 @@ h1, h2 {
 }
 /*and inside it*/
 .parent {
+  width:100%
+  vertical-align: middle;    /* vertical alignment of the inline element */
   display: table;
   table-layout: fixed;
 }
@@ -124,7 +131,7 @@ h1, h2 {
 
 html, body {
   width: 99.9%;
-  height: 90vh;
+  height: 80vh;
   background: #000E10;
 }
 html {
