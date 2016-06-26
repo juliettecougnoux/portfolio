@@ -25,9 +25,6 @@ function squareThis(element, ratio, minLimit) {
     }
   }
 }
-$(window).load(function() {
-	$(".loader").fadeOut("1000");
-})
 
 $(document).ready(function() {
   squareThis('.circle');
