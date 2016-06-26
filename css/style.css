@@ -1,3 +1,6 @@
+/* Custom base */
+
+
 /* Font-face declaration*/
 
 @font-face {
@@ -8,9 +11,23 @@
   font-family: StreetvertisingMedium;
   src: url(fonts/StreetvertisingMedium.ttf);
 }
-
-/* Custom base */
-
+@font-face {
+  font-family: StreetvertisingLight;
+  src: url(fonts/StreetvertisingLight.ttf);
+}
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background: #000E10;
+  overflow: hidden;
+}
+canvas {
+  width: 100vh;
+  height: 85vh;
+  margin-top: 15vh;
+  display: block;
+  vertical-align: bottom;
+}
 .nopadding {
   padding: 0!important;
   margin: 0 !important;
@@ -24,10 +41,10 @@
   margin: 5vh;
   height: 10vh;
 }
-h1, h2 {
+h1 {
   font-family: "StreetvertisingBold";
   letter-spacing: 10px;
-  position: absolute;
+  */ position: absolute;
   font-weight: bolder;
   top: 10px;
   left: 10px;
@@ -40,6 +57,7 @@ h1, h2 {
 }
 
 /* Custom home page center */
+
 
 /* The circle... */
 
@@ -127,13 +145,43 @@ i {
   z-index: 1000;
   margin-left: -100vw;
   background-color: #000E10;
+  padding: 15px;
+  padding-right: 45px;
 }
 .name2 {
   margin: 5vh;
   height: 10vh;
 }
-.center{
+.center {
   margin-top: 15vh;
+}
+h2 {
+  color: #E6F4F6;
+  font-family: "StreetvertisingBold";
+  font-size: 22px;
+  position: relative;
+  top: 0;
+  margin: auto;
+  text-align: center;
+  font-weight: bolder;
+}
+.julietteImg {
+  border-right: 1px solid #E6F4F6;
+  background-image: url('../images/juliette_cougnoux.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+  border-radius: 20;
+}
+.description {
+  padding: 30px;
+  padding-top: 0;
+  padding-left: 10%;
+  text-align: justify;
+  color: #E6F4F6;
+  font-family: "StreetvertisingLight";
+  font-size: 18px;
 }
 
 /* Custom projets page center */
@@ -151,32 +199,11 @@ i {
 
 .active {
   transition: 2s;
-  margin-left: 0vw;
+  margin-left: 0;
+  width: 100vw;
 }
 .overflow {
-  overflow: auto;
-}
-
-/* Particles-js */
-
-html, body {
-  width: 100vw;
-  height: 100vh;
-  background: #000E10;
-  overflow: hidden;
-}
-html {
-  -webkit-tap-highlight-color: red;
-}
-body {
-  font: normal 75% Arial, Helvetica, sans-serif;
-}
-canvas {
-  width: 100vh;
-  height: 85vh;
-  margin-top: 15vh;
-  display: block;
-  vertical-align: bottom;
+  overflow-y: auto;
 }
 
 /* particles.js container */
@@ -187,7 +214,6 @@ canvas {
   background-color: #000E10;
   background-image: url('');
   background-size: cover;
-  background-position: 50% 50%;
   background-repeat: no-repeat;
   position: absolute;
   z-index: 10;
@@ -197,8 +223,8 @@ canvas {
 
 @media screen and (max-width: 768px) {
   html, body {
-    width: 99.9%;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
     background: #000E10;
     overflow-y: scroll;
   }
