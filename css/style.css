@@ -41,7 +41,6 @@ h1, h2 {
 
 /* Custom home page center */
 
-
 /* The circle... */
 
 .circle {
@@ -87,6 +86,10 @@ i {
 .right {
   text-align: right;
 }
+.right:hover, .left:hover {
+  color: #000E10;
+  text-decoration: overline;
+}
 
 /* Animation of the arrow-location when click on left and right */
 
@@ -124,7 +127,13 @@ i {
   z-index: 1000;
   margin-left: -100vw;
   background-color: #000E10;
-  overflow-y: auto;
+}
+.name2 {
+  margin: 5vh;
+  height: 10vh;
+}
+.center{
+  margin-top: 15vh;
 }
 
 /* Custom projets page center */
@@ -136,21 +145,22 @@ i {
   z-index: 1000;
   margin-left: 100vw;
   background-color: #000E10;
-  overflow-y: auto;
 }
-.right:hover, .left:hover {
-  color: #000E10;
-  text-decoration: overline;
-}
+
+/* Class on click */
+
 .active {
   transition: 2s;
-  margin-left: 0;
+  margin-left: 0vw;
+}
+.overflow {
+  overflow: auto;
 }
 
-/* particles-js */
+/* Particles-js */
 
 html, body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #000E10;
   overflow: hidden;
@@ -172,7 +182,7 @@ canvas {
 /* particles.js container */
 
 #particles-js {
-  width: 100%;
+  width: 100vw;
   height: 85vh;
   background-color: #000E10;
   background-image: url('');
@@ -194,9 +204,6 @@ canvas {
   }
   canvas {
     overflow-y: scroll;
-  }
-  .container {
-    max-width: 730px;
   }
   .circle {
     top: 40vh;
