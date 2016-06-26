@@ -9,13 +9,20 @@
     <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="css/fonts/font-awesome-4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+    $(window).load(function() {
+      $(".loader").fadeOut("1000");
+    })
+    </script>
   </head>
 
   <body>
 
     <!-- particles.js container -->
     <div class="container-fluid">
-      <div class="loader"></div>
+      <div class="loader" style="display: none;"></div>
+      <noscript><div id="div_exemple">Veuillez patienter pendant le chargement de la page.</div></noscript>
+
 
       <div class="container cv" id="CV">
         <div class="col-xs-12">
@@ -62,6 +69,7 @@
     </div>
 
     <!-- scripts -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/jquery/dist/jquery.js"></script>
     <script src="js/jquery/dist/jquery.min.js"></script>
     <script src="css/bootstrap/dist/js/bootstrap.js"></script>
