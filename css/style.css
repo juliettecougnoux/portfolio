@@ -1,5 +1,16 @@
 /* Custom base */
 
+.loader {
+  background-image: url('../images/loader.png');
+  position: fixed;
+  z-index: 9999;
+  background: url('icon-loader.gif') 50% 50% no-repeat;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: wait;
+}
 
 /* Font-face declaration*/
 
@@ -180,8 +191,8 @@ h2 {
   padding-left: 10%;
   text-align: justify;
   color: #E6F4F6;
-  font-family: "StreetvertisingLight";
-  font-size: 18px;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 /* Custom projets page center */

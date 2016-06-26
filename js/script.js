@@ -25,6 +25,9 @@ function squareThis(element, ratio, minLimit) {
     }
   }
 }
+$(window).load(function() {
+	$(".loader").fadeOut("1000");
+})
 
 $(document).ready(function() {
   squareThis('.circle');
@@ -54,3 +57,42 @@ $(document).ready(function() {
     });
   });
 });
+
+(function($){
+
+	$.fn.shuffleLetters = function(prop){
+
+		// Handling default arguments
+		var options = $.extend({
+			// Default arguments
+		},prop)
+
+		return this.each(function(){
+			// The main plugin code goes here
+		});
+	};
+
+	// A helper function
+
+	function randomChar(type){
+		// Generate and return a random character
+	}
+
+})(jQuery);
+
+function randomChar(type){
+	var pool = "";
+
+	if (type == "lowerLetter"){
+		pool = "abcdefghijklmnopqrstuvwxyz0123456789";
+	}
+	else if (type == "upperLetter"){
+		pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+	}
+	else if (type == "symbol"){
+		pool = ",.?/\\(^)![]{}*&^%$#'\"";
+	}
+
+	var arr = pool.split('');
+	return arr[Math.floor(Math.random()*arr.length)];
+}
