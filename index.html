@@ -16,8 +16,9 @@
     <!-- particles.js container -->
     <div class="container-fluid">
       <div class="loader" style="display: none;"></div>
-      <noscript><div id="div_exemple">Veuillez patienter pendant le chargement de la page.</div></noscript>
-
+      <noscript>
+        <div id="div_exemple">Veuillez patienter pendant le chargement de la page.</div>
+      </noscript>
 
       <div class="container cv" id="CV">
         <div class="col-xs-12">
@@ -30,10 +31,17 @@
             <div class="row julietteImg"></div>
           </div>
           <div class="col-xs-12 col-md-7 nopadding">
+            <h2>Qui suis-je ?</h2>
             <p class="description">
               Community management, rédaction, plans de communication, créations numériques et print, HTML, CSS, JavaScript, Wordpress et PHP. Maîtrise des suites Adobe, Office et Mac, voici certaines de mes compétences acquises au cours mon Master et mes expériences variées.
             </p>
-          </div>
+            <p class="shuffleText" id="container"></div>
+            </p>
+            <!-- <h1 class="heading-1 heading-separator">
+              <span id="containerTitleBig" style="display: inline;">Passionné</span>&nbsp;<br>
+              <span id="containerTitleSchuffle" class="span2">HTML5, CSS3, JS, PHP, MySQL, SEO et encore tellement à découvrir</span>&nbsp;
+            </h1> -->
+
         </div>
       </div>
 
@@ -66,9 +74,9 @@
     <!-- scripts -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
-    $(window).load(function() {
-      $(".loader").fadeOut("1000");
-    })
+      $(window).load(function() {
+        $(".loader").fadeOut("1000");
+      })
     </script>
     <script src="js/jquery/dist/jquery.js"></script>
     <script src="js/jquery/dist/jquery.min.js"></script>
