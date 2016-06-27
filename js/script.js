@@ -27,11 +27,30 @@ function squareThis(element, ratio, minLimit) {
 }
 
 // $(".s1").hide();
+// $(".s2").hide();
+// $(".s3").hide();
+// $(".s4").hide();
+// $(".s5").hide();
+// $(".s6").hide();
+// $(".s7").hide();
+// $(".s8").hide();
+// $(".s9").hide();
 
 $(document).ready(function() {
   squareThis('.circle');
   squareThis('.parent');
   squareThis('.loadingImg');
+  $('.cv').scroll(function() {
+    $(".s1").delay(1000).fadeIn(1000);
+    $(".s2").delay(1500).fadeIn(1000);
+    $(".s3").delay(2000).fadeIn(1000);
+    $(".s4").delay(2500).fadeIn(1000);
+    $(".s5").delay(3000).fadeIn(1000);
+    $(".s6").delay(3500).fadeIn(1000);
+    $(".s7").delay(4000).fadeIn(1000);
+    $(".s8").delay(4500).fadeIn(1000);
+    $(".s9").delay(5000).fadeIn(1000);
+  });
   $(".loader").delay(1000).fadeOut(2000);
   $(".left").click(function() {
     $("i").addClass("rotateleft").delay(1000).queue(function() {
