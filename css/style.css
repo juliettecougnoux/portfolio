@@ -8,7 +8,6 @@
   width: 100vw;
   cursor: wait;
 }
-
 .loadingImg {
   height: 30vh;
   position: fixed;
@@ -20,7 +19,6 @@
   margin: auto;
   animation: loaderrotation 3s infinite linear;
 }
-
 @keyframes loaderrotation {
   0% {
     transform: rotate(0deg);
@@ -170,7 +168,7 @@ i {
 .cv {
   position: absolute;
   width: 100vw;
-  height: 101vh;
+  height: 100vh;
   z-index: 1000;
   margin-left: -100vw;
   background-color: #000E10;
@@ -197,8 +195,13 @@ h2 {
   text-align: center;
   font-weight: bolder;
 }
-.julietteImg {
+.me, .whoami {
+  padding-bottom: 5%;
+}
+.me {
   border-right: 1px solid #E6F4F6;
+}
+.julietteImg {
   background-image: url('../images/juliette_cougnoux.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -254,18 +257,94 @@ blockquote footer {
 
 /* 2nd block "Skills" */
 
-.skills {
-  width:100vw;
+#skills {
+  /*width:100vw;
+  height:100vh;*/
   background-color: #E6F4F6;
-  margin-bottom: 5%;
-  margin-left: -2%;
+  width: 100vw;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.skills h2 {
+#skills h2 {
   margin-top: 5%;
-  color : #000E10;
+  margin-bottom: 2%;
+  color: #000E10;
+}
+#skills h3 {
+  color: #038A9D;
 }
 .skill {
   text-align: center;
+}
+.ico {
+  height: 60px;
+}
+
+/* 2nd block "Experiences" */
+
+.experiences {
+  background-color: #000E10;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100vw;
+}
+.experiences h2 {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  color: #E6F4F6;
+}
+.experiences h3, .experiences h4 {
+  text-align: center;
+  color: #038A9D;
+  font-size: 18px
+}
+.experiences h4 {
+  color: #038A9D;
+  text-align: center;
+  font-size: 15px
+}
+.experience {
+  color: #E6F4F6;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 0.1em solid #E6F4F6;
+}
+.experience:last-child {
+  border-bottom: 0;
+}
+
+/* 2nd block "Formations" */
+
+.formations {
+  background-color: #E6F4F6;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #000E10;
+  width: 100vw;
+}
+.formations h2 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  color: #000E10;
+}
+.formations h3, .formations h4 {
+  color: #038A9D;
+  font-size: 18px
+}
+.formations h4 {
+  font-size: 16px
+}
+.formation {
+  text-align: center;
+  border-bottom: 0.1em solid #000E10;
+}
+.formation:last-child {
+  border-bottom: 0;
 }
 
 /* Custom projets page center */
@@ -287,7 +366,7 @@ blockquote footer {
   width: 100vw;
 }
 .overflow {
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 /* particles.js container */
@@ -306,6 +385,7 @@ blockquote footer {
 /* Responsive: Portrait tablets and up */
 
 @media screen and (max-width: 768px) {
+  /* base css */
   html, body {
     width: 100vw;
     height: 100vh;
@@ -315,14 +395,28 @@ blockquote footer {
   canvas {
     overflow-y: scroll;
   }
+  /* home page */
   .circle {
     top: 40vh;
   }
-  .child, i {
+  .child {
+    font-size: 20px;
+  }
+  .fa {
     font-size: 40px;
   }
   .name {
     height: 20vh;
+  }
+  /* CV page */
+  .me {
+    border: none;
+  }
+  #skills {
+    height: 130vh;
+  }
+  .ico {
+    height: 30px;
   }
 }
 
