@@ -185,7 +185,7 @@ i {
   margin-top: 15vh;
 }
 
-/* 1st zone "Who am i ?" */
+/* 1st block "Who am i ?" */
 
 h2 {
   color: #E6F4F6;
@@ -250,6 +250,22 @@ blockquote footer {
 }
 .description2 {
   padding-top: 0;
+}
+
+/* 2nd block "Skills" */
+
+.skills {
+  width:100vw;
+  background-color: #E6F4F6;
+  margin-bottom: 5%;
+  margin-left: -2%;
+}
+.skills h2 {
+  margin-top: 5%;
+  color : #000E10;
+}
+.skill {
+  text-align: center;
 }
 
 /* Custom projets page center */
