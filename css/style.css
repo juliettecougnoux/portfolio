@@ -3,7 +3,7 @@
 .loader {
   background-image: url('../images/loader.png') 50% 50% no-repeat;
   position: fixed;
-  z-index: 9999;
+  z-index: 1 000 000;
   top: 0px;
   left: 0px;
   height: 100%;
@@ -164,6 +164,9 @@ i {
 .center {
   margin-top: 15vh;
 }
+
+/* 1st zone "Who am i ?" */
+
 h2 {
   color: #E6F4F6;
   font-family: "StreetvertisingBold";
