@@ -1,7 +1,9 @@
 /* Custom base */
 
 .loader {
-  background-image: url('../images/loader.png') 50% 50% no-repeat;
+  background-image: url('../images/loader.png');
+  background-position: 50% 50% ;
+  background-repeat: no-repeat;
   position: fixed;
   z-index: 1000000;
   top: 0px;
