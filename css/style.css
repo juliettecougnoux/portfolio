@@ -306,11 +306,21 @@ blockquote footer {
   font-size: 15px
 }
 .experience {
+  position: relative;
+  background-color: #000E10;
   color: #E6F4F6;
   font-family: sans-serif;
   font-size: 14px;
   text-align: center;
   border-bottom: 0.1em solid #E6F4F6;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.experience:hover {
+  z-index: 200000;
+  border-top: 0.1em solid #E6F4F6;
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
 }
 .experience:last-child {
   border-bottom: 0;
@@ -340,8 +350,18 @@ blockquote footer {
   font-size: 16px
 }
 .formation {
+  background-color: #E6F4F6;
   text-align: center;
   border-bottom: 0.1em solid #000E10;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+  position: relative;
+}
+.formation:hover {
+  z-index: 200000;
+  border-top: 0.1em solid #000E10;
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
 }
 .formation:last-child {
   border-bottom: 0;
