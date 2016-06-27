@@ -30,7 +30,7 @@ $(document).ready(function() {
   squareThis('.circle');
   squareThis('.parent');
   squareThis('.loadingImg');
-  $(".loader").delay(3000).fadeOut(800);
+  $(".loader").delay(2000).fadeOut(2000);
   $(".left").click(function() {
     $("i").addClass("rotateleft").delay(1000).queue(function() {
       $(".cv").addClass("active");
