@@ -1,7 +1,3 @@
-$(window).load(function() {
-  $(".loader").fadeOut("1000");
-})
-
 function squareThis(element, ratio, minLimit) {
   // First of all, let's square the element
   square(ratio, minLimit);
@@ -29,6 +25,9 @@ function squareThis(element, ratio, minLimit) {
     }
   }
 }
+$(document).load(function() {
+  $(".loader").fadeOut("1000");
+})
 
 $(document).ready(function() {
   squareThis('.circle');
