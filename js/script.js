@@ -1,5 +1,5 @@
 $(window).load(function() {
-  $(".loader").s("1000");
+  $(".loader").fadeOut("1000");
 })
 
 function squareThis(element, ratio, minLimit) {
