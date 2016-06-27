@@ -25,13 +25,12 @@ function squareThis(element, ratio, minLimit) {
     }
   }
 }
-$(document).load(function() {
-  $(".loader").fadeOut("1000");
-})
 
-$(document).ready(function() {
+$(window).ready(function() {
   squareThis('.circle');
   squareThis('.parent');
+  squareThis('.loadingImg');
+  $(".loader").hide();
   $(".left").click(function() {
     $("i").addClass("rotateleft").delay(1000).queue(function() {
       $(".cv").addClass("active");
