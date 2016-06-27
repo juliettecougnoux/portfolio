@@ -395,6 +395,15 @@ blockquote footer {
   margin-bottom: 3%;
   color: #E6F4F6;
 }
+.adresse {
+  padding: 30px;
+  padding-top: 10%;
+  padding-left: 10%;
+  text-align: justify;
+  color: #E6F4F6;
+  font-family: sans-serif;
+  font-size: 14px;
+}
 
 /* Custom projets page center */
 
