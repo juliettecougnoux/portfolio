@@ -26,7 +26,7 @@ function squareThis(element, ratio, minLimit) {
   }
 }
 
-$(window).ready(function() {
+$(document).ready(function() {
   squareThis('.circle');
   squareThis('.parent');
   squareThis('.loadingImg');
