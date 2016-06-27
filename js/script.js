@@ -1,3 +1,7 @@
+$(window).load(function() {
+  $(".loader").s("1000");
+})
+
 function squareThis(element, ratio, minLimit) {
   // First of all, let's square the element
   square(ratio, minLimit);
