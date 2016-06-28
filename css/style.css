@@ -581,14 +581,14 @@ blockquote footer {
 }
 @media screen and (max-width: 1024px) {
   #skills {
-    height: 140vh;
+    height: 100vh;
   }
 }
 .child {
   font-size: 20px;
 }
 .fa {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 /* Responsive: LG screen and 4K */

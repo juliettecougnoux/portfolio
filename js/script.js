@@ -75,7 +75,7 @@ $(document).ready(function() {
   $("#cv-link").click(function() {
     $(".cv").addClass("active");
     $(".cv").addClass("overflow");
-    $(".projets").delay(2000).removeClass("active");
+    $(".projets").removeClass("active");
   })
 });
 
