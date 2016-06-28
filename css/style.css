@@ -415,10 +415,11 @@ blockquote footer {
   padding-left: 5%;
   padding-right: 5%;
   width: 100vw;
+  height: 100vh
 }
 .contact h2 {
-  margin-top: 5%;
-  margin-bottom: 3%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   color: #E6F4F6;
 }
 .adresse {
@@ -512,6 +513,9 @@ blockquote footer {
 }
 .tsuru {
   background-image: url('../images/tsuru.jpg');
+}
+#exos{
+  height: 100vh
 }
 
 /* Class on click */
