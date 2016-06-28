@@ -1,5 +1,29 @@
 /* Custom base */
 
+.navbar-default {
+  background-color: #E6F4F6;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+}
+.navbar-default .navbar-nav > li > a, .dropdown-menu > li > a, button {
+  color: #000E10;
+  font-family: "StreetvertisingMedium";
+  font-size: larger;
+  border:none;
+  background-color: #E6F4F6;
+}
+.navbar-default .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover, button:hover{
+  color: #038A9D;
+  background-color: #E6F4F6;
+}
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #E6F4F6;
+  color: #038A9D;
+}
+.navbar-nav > li > .dropdown-menu {
+  background-color: #E6F4F6;
+}
 .loader {
   background-color: #FFE5F2;
   background-position: 50% 50%;
@@ -172,8 +196,7 @@ i {
   z-index: 1000;
   margin-left: -100vw;
   background-color: #000E10;
-  padding: 15px;
-  padding-right: 45px;
+  padding: 0 !important;
 }
 .name2 {
   margin: 5vh;
@@ -476,13 +499,22 @@ blockquote footer {
   .ico {
     height: 30px;
   }
+  iframe {
+    width: 300px;
+    height: 150px;
+  }
 }
 @media screen and (max-width: 1024px) {
   #skills {
     height: 140vh;
   }
 }
-
+.child {
+  font-size: 20px;
+}
+.fa {
+  font-size: 40px;
+}
 
 /* Responsive: LG screen and 4K */
 

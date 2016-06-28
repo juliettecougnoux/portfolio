@@ -16,257 +16,345 @@
       <img class="loadingImg" src="images/loader.png" alt="loading image"/>
     </div>
 
-    <!-- particles.js container -->
-    <noscript>
-      <div id="div_exemple">Veuillez patienter pendant le chargement de la page.</div>
-    </noscript>
-
     <div class="container cv" id="CV">
-      <div class="col-xs-12">
-        <h1 class="name2">
-          CV</h1>
-      </div>
-      <div class="row center">
-        <div class="col-xs-12 col-md-5 me">
-          <h2>Juliette Cougnoux, D<span style="font-family:sans-serif">é</span>veloppeuse Web et Communicante</h2>
-          <div class="row julietteImg"></div>
-        </div>
-        <div class="col-xs-12 col-md-7 whoami">
-          <h2 class=".heading-1">Qui suis-je ?</h2>
-          <p class="shuffleText" id="container"></p>
-          <p class="description">
-            Community management, rédaction, plans de communication, créations numériques et print, HTML, CSS, JavaScript, Wordpress et PHP. Maîtrise des suites Adobe, Office et Mac, voici certaines de mes compétences acquises au cours mon Master et mes expériences variées.
-          </p>
-          <blockquote class="citation">On ne va jamais aussi loin que lorsqu'on ne sait pas où l'on va.
-            <footer>
-              <cite>Christrophe Colomb</cite>
-            </footer>
-          </blockquote>
-          <p class="description2">
-            Il en va de même pour la veille sur internet. On sait toujours ce que l'on cherche mais on ne sait jamais ce que l'on va trouver. On vogue de lien en lien, de page en page et l'on découvre sans cesse de nouveaux horizons.
-          </p>
-        </div>
-        <div class="col-xs-12 nopadding">
-          <div class="row" id="skills">
-            <h2>Mes comp<span style="font-family:sans-serif">é<span>tences</h2>
-                <div class="skill s1 col-xs-12 col-md-7">
-                  <h3>Systèmes d'exploitation</h3>
-                  <img class="ico" src="images/os-logos.png" alt="système d'exploitation"/>
-                </div>
-                <div class="skill s2 col-xs-12 col-md-5">
-                  <h3>CMS</h3>
-                  <img class="ico" src="images/wordpress.png" alt="Wordpress"/>
-                  <img class="ico" src="images/prestashop.png" alt="Prestashop"/>
-                </div>
-                <div class="skill s3 col-xs-12 col-md-4">
-                  <h3>Langages informatiques</h3>
-                  <img class="ico" src="images/html.png" alt="HTML5"/>
-                  <img class="ico" src="images/css.png" alt="CSS3"/>
-                  <img class="ico" src="images/js.png" alt="JavaScript"/>
-                </div>
-                <div class="skill s4 col-xs-12 col-md-8">
-                  <h3>Médias sociaux</h3>
-                  <img class="ico" src="images/rs.png" alt="Facebook, Twitter, Google +, Linkedin, Instagram, Pinterest"/>
-                </div>
-                <div class="skill s5 col-xs-12 col-md-4">
-                  <h3>Logiciel de gestion de version</h3>
-                  <img class="ico" src="images/github.png" alt="Github"/>
-                </div>
-                <div class="skill s6 col-xs-12 col-md-4">
-                  <h3>Frameworks</h3>
-                  <img class="ico" src="images/sf.png" alt="Symfony"/>
-                  <img class="ico" src="images/bootstrap.png" alt="Twitter Bootstrap"/>
-                </div>
-                <div class="skill s7 col-xs-12 col-md-4">
-                  <h3>Suite Adobe</h3>
-                  <img class="ico" src="images/adobe.png" alt="Suite Adobe"/>
-                </div>
-                <div class="skill s8 col-xs-12 col-lg-5">
-                  <h3>Suite Mac</h3>
-                  <img class="ico" src="images/mac.png" alt="Suite Mac"/>
-                </div>
-                <div class="skill s9 col-xs-12 col-lg-7">
-                  <h3>Suite Office</h3>
-                  <img class="ico" src="images/office.png" alt="Suite Office"/>
-                </div>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="collapse-1">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#comp">Mes comp<span style="font-family:sans-serif">é</span>tences</a>
+              </li>
+              <li>
+                <a href="#exp">Mes exp<span style="font-family:sans-serif">é<span>riences</a>
+                  </li>
+                  <li>
+                    <a href="#form">Ma formation</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accueil<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#home">
+                          <button type="button" name="accueil-btn" onClick="window.location.reload()">Accueil</button>
+                        </a>
+                      </li>
+                      <li role="separator" class="divider"></li>
+                      <li>
+                        <a href="#projets">Projets</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="col-xs-12 nopadding">
-              <div class="row experiences">
-                <h2>Mes Exp<span style="font-family:sans-serif">é<span>riences</h2>
-                    <div class="row experience">
-                      <h3>Pôle Emploi ( Marseille )</h3>
-                      <h4>Prestataire web - De février 2016 à juin 2016</h4>
-                      <p>
-                        Module intranet pour faciliter la recherche d’emploi.
-                      </p>
+          </nav>
+
+          <div class="col-xs-12">
+            <h1 class="name2">
+              CV</h1>
+          </div>
+          <div class="row nopadding center">
+            <div class="col-xs-12 col-md-5 nopadding me">
+              <h2>Juliette Cougnoux, D<span style="font-family:sans-serif">é</span>veloppeuse Web et Communicante</h2>
+              <div class="row julietteImg"></div>
+            </div>
+            <div class="col-xs-12 col-md-7 nopadding whoami">
+              <h2 class=".heading-1">Qui suis-je ?</h2>
+              <p class="shuffleText" id="container"></p>
+              <p class="description">
+                Community management, rédaction, plans de communication, créations numériques et print, HTML, CSS, JavaScript, Wordpress et PHP. Maîtrise des suites Adobe, Office et Mac, voici certaines de mes compétences acquises au cours mon Master et mes expériences variées.
+              </p>
+              <blockquote class="citation">On ne va jamais aussi loin que lorsqu'on ne sait pas où l'on va.
+                <footer>
+                  <cite>Christrophe Colomb</cite>
+                </footer>
+              </blockquote>
+              <p class="description2">
+                Il en va de même pour la veille sur internet. On sait toujours ce que l'on cherche mais on ne sait jamais ce que l'on va trouver. On vogue de lien en lien, de page en page et l'on découvre sans cesse de nouveaux horizons.
+              </p>
+            </div>
+            <div class="col-xs-12 nopadding" id="comp">
+              <div class="row" id="skills">
+                <h2>Mes comp<span style="font-family:sans-serif">é<span>tences</h2>
+                    <div class="skill s1 col-xs-12 col-md-7">
+                      <h3>Systèmes d'exploitation</h3>
+                      <img class="ico" src="images/os-logos.png" alt="système d'exploitation"/>
                     </div>
-                    <div class="row experience">
-                      <h3>Association Bokra Sawa (Marseille)</h3>
-                      <h4>Stagiaire community manager et web master - Mars 2016</h4>
-                      <p>
-                        Site internet, contenus, API Google Map JavaScript, Réseaux Sociaux.
-                      </p>
+                    <div class="skill s2 col-xs-12 col-md-5">
+                      <h3>CMS</h3>
+                      <img class="ico" src="images/wordpress.png" alt="Wordpress"/>
+                      <img class="ico" src="images/prestashop.png" alt="Prestashop"/>
                     </div>
-                    <div class="row experience">
-                      <h3>Conseil et création en communication web (Marseille)</h3>
-                      <h4>Auto-entrepreneur - Depuis août 2015</h4>
-                      <p>
-                        Sites web, application, réseaux sociaux, Affiches/flyers numériques.
-                      </p>
+                    <div class="skill s3 col-xs-12 col-md-4">
+                      <h3>Langages informatiques</h3>
+                      <img class="ico" src="images/html.png" alt="HTML5"/>
+                      <img class="ico" src="images/css.png" alt="CSS3"/>
+                      <img class="ico" src="images/js.png" alt="JavaScript"/>
                     </div>
-                    <div class="row experience">
-                      <h3>Union des Centres Sociaux des Bouches-du-Rhône (Marseille)</h3>
-                      <h4>Service civique communication - D’avril 2015 à octobre 2015</h4>
-                      <p>Refonte du site web, Réseaux sociaux, Communication interne (journal, affiches, dépliants, événements).
-                      </p>
+                    <div class="skill s4 col-xs-12 col-md-8">
+                      <h3>Médias sociaux</h3>
+                      <img class="ico" src="images/rs.png" alt="Facebook, Twitter, Google +, Linkedin, Instagram, Pinterest"/>
                     </div>
-                    <div class="row experience">
-                      <h3>Festival Overclock, Festival RISC (Marseille)</h3>
-                      <h4>Stagiaire community manager - De septembre 2014 à avril 2015</h4>
-                      <p>
-                        Création du plan de communication, création du site internet, démarchage des artistes et recherche de mécénat, contenu éditorial web Réseaux sociaux (concours, rédaction et contenus photographiques).
-                      </p>
+                    <div class="skill s5 col-xs-12 col-md-4">
+                      <h3>Logiciel de gestion de version</h3>
+                      <img class="ico" src="images/github.png" alt="Github"/>
                     </div>
-                    <div class="row experience">
-                      <h3>Agence de communication Pélican (Mallemort)</h3>
-                      <h4>Stagiaire chargée du contenu éditorial web - De mai 2014 à août 2014</h4>
-                      <p>
-                        Contenu photographique, rédaction (mailing, sites internet), veille stratégique pour l’agence.
-                      </p>
+                    <div class="skill s6 col-xs-12 col-md-4">
+                      <h3>Frameworks</h3>
+                      <img class="ico" src="images/sf.png" alt="Symfony"/>
+                      <img class="ico" src="images/bootstrap.png" alt="Twitter Bootstrap"/>
+                    </div>
+                    <div class="skill s7 col-xs-12 col-md-4">
+                      <h3>Suite Adobe</h3>
+                      <img class="ico" src="images/adobe.png" alt="Suite Adobe"/>
+                    </div>
+                    <div class="skill s8 col-xs-12 col-lg-5">
+                      <h3>Suite Mac</h3>
+                      <img class="ico" src="images/mac.png" alt="Suite Mac"/>
+                    </div>
+                    <div class="skill s9 col-xs-12 col-lg-7">
+                      <h3>Suite Office</h3>
+                      <img class="ico" src="images/office.png" alt="Suite Office"/>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 nopadding">
-                  <div class="row formations">
-                    <h2>Ma formation</h2>
-                    <div class="row formation">
-                      <div class="col-xs-12">
-                        <h3>Formation SIMPLonMARS</h3>
-                        <p>
-                          <h4>2015/2016</h4>
-                          <ul>
-                            <p>
-                              Formation SIMPLonMARS en Programmation Web à l’École Centrale de Marseille (8 mois)</p>
+                <div class="col-xs-12 nopadding" id="exp">
+                  <div class="row experiences">
+                    <h2>Mes Exp<span style="font-family:sans-serif">é<span>riences</h2>
+                        <div class="row experience">
+                          <h3>Pôle Emploi ( Marseille )</h3>
+                          <h4>Prestataire web - De février 2016 à juin 2016</h4>
+                          <p>
+                            Module intranet pour faciliter la recherche d’emploi.
+                          </p>
+                        </div>
+                        <div class="row experience">
+                          <h3>Association Bokra Sawa (Marseille)</h3>
+                          <h4>Stagiaire community manager et web master - Mars 2016</h4>
+                          <p>
+                            Site internet, contenus, API Google Map JavaScript, Réseaux Sociaux.
+                          </p>
+                        </div>
+                        <div class="row experience">
+                          <h3>Conseil et création en communication web (Marseille)</h3>
+                          <h4>Auto-entrepreneur - Depuis août 2015</h4>
+                          <p>
+                            Sites web, application, réseaux sociaux, Affiches/flyers numériques.
+                          </p>
+                        </div>
+                        <div class="row experience">
+                          <h3>Union des Centres Sociaux des Bouches-du-Rhône (Marseille)</h3>
+                          <h4>Service civique communication - D’avril 2015 à octobre 2015</h4>
+                          <p>Refonte du site web, Réseaux sociaux, Communication interne (journal, affiches, dépliants, événements).
+                          </p>
+                        </div>
+                        <div class="row experience">
+                          <h3>Festival Overclock, Festival RISC (Marseille)</h3>
+                          <h4>Stagiaire community manager - De septembre 2014 à avril 2015</h4>
+                          <p>
+                            Création du plan de communication, création du site internet, démarchage des artistes et recherche de mécénat, contenu éditorial web Réseaux sociaux (concours, rédaction et contenus photographiques).
+                          </p>
+                        </div>
+                        <div class="row experience">
+                          <h3>Agence de communication Pélican (Mallemort)</h3>
+                          <h4>Stagiaire chargée du contenu éditorial web - De mai 2014 à août 2014</h4>
+                          <p>
+                            Contenu photographique, rédaction (mailing, sites internet), veille stratégique pour l’agence.
                           </p>
                         </div>
                       </div>
-                      <div class="row formation">
-                        <div class="col-xs-12">
-                          <h3>Master 1 et Master 2 en Communication</h3>
-                          <p>
-                            <h4>2013/2015</h4>
-                            <ul>
-                              <p>
-                                Informations et Communication à l’EJCAM, spécialité stratégies de Com- munication Contenu Numérique et Études Avancées en Communication et Médias - Mention Bien
+                    </div>
+                    <div class="col-xs-12 nopadding" id="form">
+                      <div class="row formations">
+                        <h2>Ma formation</h2>
+                        <div class="row formation">
+                          <div class="col-xs-12">
+                            <h3>Formation SIMPLonMARS</h3>
+                            <p>
+                              <h4>2015/2016</h4>
+                              <ul>
+                                <p>
+                                  Formation SIMPLonMARS en Programmation Web à l’École Centrale de Marseille (8 mois)</p>
                               </p>
                             </div>
                           </div>
                           <div class="row formation">
                             <div class="col-xs-12">
-                              <h3>Master 1 et Master 2 en Histoire</h3>
+                              <h3>Master 1 et Master 2 en Communication</h3>
                               <p>
-                                <h4>2012/2013</h4>
+                                <h4>2013/2015</h4>
                                 <ul>
                                   <p>
-                                    Histoire spécialité Documentation et Médias à l’université de Lettres d’Aix- en-Provence
+                                    Informations et Communication à l’EJCAM, spécialité stratégies de Com- munication Contenu Numérique et Études Avancées en Communication et Médias - Mention Bien
                                   </p>
                                 </div>
                               </div>
                               <div class="row formation">
                                 <div class="col-xs-12">
-                                  <h3>Baccalauréat Litéraire</h3>
+                                  <h3>Master 1 et Master 2 en Histoire</h3>
                                   <p>
-                                    <h4>2009</h4>
+                                    <h4>2012/2013</h4>
                                     <ul>
                                       <p>
-                                        Lycée de l’Empérie, Salon-de-Provence, Série littéraire - Mention Assez Bien
+                                        Histoire spécialité Documentation et Médias à l’université de Lettres d’Aix- en-Provence
                                       </p>
                                     </div>
                                   </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 nopadding">
-                                <div class="row contact">
-                                  <h2>N'h<span style="font-family:sans-serif">é</span>sitez pas
-                                    <span style="font-family:sans-serif">à</spam>
-                                    me contacter !</h2>
-                                  <div class="col-sx-12 col-md-7" style="text-align:center">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.3595189222574!2d5.382577950565184!3d43.28579218402705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0ae13318239%3A0xc56699ece32e2bc6!2s4+Rue+du+Rouet%2C+13006+Marseille!5e0!3m2!1sfr!2sfr!4v1467069950269" width="500px" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                  </div>
-                                  <div class="col-xs-12 col-md-5 adresse">
-                                    <div class="row">
-                                      <div class="col-xs-6">
-                                        <span class="glyphicon glyphicon-map-marker"></span>
-                                        <strong>Adresse :</strong><br>
+                                  <div class="row formation">
+                                    <div class="col-xs-12">
+                                      <h3>Baccalauréat Litéraire</h3>
+                                      <p>
+                                        <h4>2009</h4>
+                                        <ul>
+                                          <p>
+                                            Lycée de l’Empérie, Salon-de-Provence, Série littéraire - Mention Assez Bien
+                                          </p>
+                                        </div>
                                       </div>
-                                    <div class="col-xs-6">
-                                      4 rue du Rouet
-                                      <br>
-                                      13006, Marseille
-                                      <br>
-                                      France
                                     </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-xs-6">
-                                        <span class="glyphicon glyphicon-phone"></span>
-                                        <strong>Téléphone :</strong>
+                                  </div>
+                                  <div class="col-xs-12 nopadding" id="contact">
+                                    <div class="row contact">
+                                      <h2>N'h<span style="font-family:sans-serif">é</span>sitez pas
+                                        <span style="font-family:sans-serif">à</spam>
+                                        me contacter !</h2>
+                                      <div class="col-sx-12 col-md-7" style="text-align:center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.3595189222574!2d5.382577950565184!3d43.28579218402705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0ae13318239%3A0xc56699ece32e2bc6!2s4+Rue+du+Rouet%2C+13006+Marseille!5e0!3m2!1sfr!2sfr!4v1467069950269" width="500px" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
                                       </div>
-                                      <div class="col-xs-6">
-                                      0610106358
+                                      <div class="col-xs-12 col-md-5 adresse">
+                                        <div class="row">
+                                          <div class="col-xs-6">
+                                            <span class="glyphicon glyphicon-map-marker"></span>
+                                            <strong>Adresse :</strong><br>
+                                          </div>
+                                          <div class="col-xs-6">
+                                            4 rue du Rouet
+                                            <br>
+                                            13006, Marseille
+                                            <br>
+                                            France
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-xs-6">
+                                            <span class="glyphicon glyphicon-phone"></span>
+                                            <strong>Téléphone :</strong>
+                                          </div>
+                                          <div class="col-xs-6">
+                                            0610106358
+                                          </div>
+                                        </div>
+                                        <address class="row" title="contact">
+                                          <div class="col-xs-6">
+                                            <span class="glyphicon glyphicon-envelope"></span>
+                                            <strong>Email :</strong>
+                                          </div>
+                                          <div class="col-xs-6">
+                                            <a href="mailto:jcougnoux@gmail.com">jcougnoux@gmail.com</a>
+                                          </div>
+                                        </address>
+                                      </div>
                                     </div>
-                                    </div>
-                                    <address class="row" title="contact">
-                                      <div class="col-xs-6">
-                                      <span class="glyphicon glyphicon-envelope"></span>
-                                      <strong>Email :</strong>
-                                    </div>
-                                    <div class="col-xs-6">
-                                      <a href="mailto:jcougnoux@gmail.com">jcougnoux@gmail.com</a>
-                                    </div>
-                                    </address>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
 
-                          <div id="particles-js">
-                            <div class="row home" id="home">
-                              <div class="col-xs-12">
-                                <h1 class="name">
-                                  Juliette Cougnoux
-                                  <span class="hidden-xs">-</span>
-                                  Portfolio</h1>
-                              </div>
-                              <div class="col-xs-push-1 col-xs-10 col-md-push-4 col-md-4 circle nopadding">
-                                <div class="col-xs-12 parent nopadding">
-                                  <div class="col-xs-5 col-md-4 child left">< CV</div>
-                                  <i class="child col-xs-2 col-md-3 fa fa-location-arrow fa-5x" aria-hidden="true"></i>
-                                  <div class="col-xs-5 child right">Projets ></div>
+                              <!-- particles.js container -->
+
+                              <div id="particles-js">
+                                <div class="row home" id="home">
+                                  <div class="col-xs-12">
+                                    <h1 class="name">
+                                      Juliette Cougnoux
+                                      <span class="hidden-xs">-</span>
+                                      Portfolio</h1>
+                                  </div>
+                                  <div class="col-xs-push-1 col-xs-10 col-md-push-4 col-md-4 circle nopadding">
+                                    <div class="col-xs-12 parent nopadding">
+                                      <div class="col-xs-5 col-md-4 child left">< CV</div>
+                                      <i class="child col-xs-2 col-md-3 fa fa-location-arrow fa-5x" aria-hidden="true"></i>
+                                      <div class="col-xs-5 child right">Projets ></div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
 
-                          <div class="row projets" id="projets">
-                            <div class="col-xs-12">
-                              <h1 class="name2">
-                                Projets</h1>
-                            </div>
-                          </div>
+                              <div class="row projets" id="projets">
+                                <nav class="navbar navbar-default">
+                                  <div class="container-fluid">
+                                    <div class="navbar-header">
+                                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                      </button>
+                                    </div>
 
-                          <!-- scripts -->
+                                    <div class="collapse navbar-collapse" id="collapse-1">
+                                      <ul class="nav navbar-nav">
+                                        <li>
+                                          <a href="#cms">CSM</a>
+                                        </li>
+                                        <li>
+                                          <a href="#nat">Natifs et Frameworks</a>
+                                        </li>
+                                        <li>
+                                          <a href="#exos">exercices</a>
+                                        </li>
+                                      </ul>
+                                      <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accueil<span class="caret"></span>
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                            <li>
+                                              <a href="#home">
+                                                <button type="button" name="accueil-btn" onClick="window.location.reload()">Accueil</button>
+                                              </a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                              <a href="#CV">CV</a>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </nav>
+                                <div class="col-xs-12">
+                                  <h1 class="name2">
+                                    Projets</h1>
+                                </div>
+                              </div>
 
-                          <script src="js/jquery/dist/jquery.js"></script>
-                          <script src="js/jquery/dist/jquery.min.js"></script>
-                          <script src="css/bootstrap/dist/js/bootstrap.js"></script>
-                          <script src="js/particles.js"></script>
-                          <script src="js/app.js"></script>
-                          <script src="js/script.js"></script>
-                          <script src="js/modernizr.js"></script>
+                              <!-- scripts -->
 
-                        </body>
+                              <script src="js/jquery/dist/jquery.js"></script>
+                              <script src="js/jquery/dist/jquery.min.js"></script>
+                              <script src="css/bootstrap/dist/js/bootstrap.js"></script>
+                              <script src="js/particles.js"></script>
+                              <script src="js/app.js"></script>
+                              <script src="js/script.js"></script>
+                              <script src="js/modernizr.js"></script>
 
-                      </html>
+                            </body>
+
+                          </html>

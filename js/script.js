@@ -26,16 +26,6 @@ function squareThis(element, ratio, minLimit) {
   }
 }
 
-// $(".s1").hide();
-// $(".s2").hide();
-// $(".s3").hide();
-// $(".s4").hide();
-// $(".s5").hide();
-// $(".s6").hide();
-// $(".s7").hide();
-// $(".s8").hide();
-// $(".s9").hide();
-
 $(document).ready(function() {
   squareThis('.circle');
   squareThis('.parent');
@@ -56,24 +46,24 @@ $(document).ready(function() {
     $("i").addClass("rotateleft").delay(1000).queue(function() {
       $(".cv").addClass("active");
       $(".cv").addClass("overflow");
-      if (window.history && window.history.pushState) {
-        window.history.pushState('forward', null, './#cv');
-        $(window).on('popstate', function() {
-          location.reload();
-        });
-      }
+      // if (window.history && window.history.pushState) {
+      //   window.history.pushState('forward', null, './#cv');
+      //   $(window).on('popstate', function() {
+      //     location.reload();
+      //   });
+      // }
     });
   });
   $(".right").click(function() {
     $("i").toggleClass("rotateright").delay(1000).queue(function() {
       $(".projets").addClass("active");
       $(".projets").addClass("overflow");
-      if (window.history && window.history.pushState) {
-        window.history.pushState('forward', null, './#projets');
-        $(window).on('popstate', function() {
-          location.reload();
-        });
-      }
+      // if (window.history && window.history.pushState) {
+      //   window.history.pushState('forward', null, './#projets');
+      //   $(window).on('popstate', function() {
+      //     location.reload();
+      //   });
+      // }
     });
   });
 });
