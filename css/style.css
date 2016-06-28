@@ -247,8 +247,11 @@ h2 {
   text-align: center;
   padding-top: 5%;
 }
+.description {
+  padding-top: 7%;
+}
 .shuffleText {
-  height: 10vh;
+  height: 8vh;
 }
 .citation {
   margin-right: 30px;

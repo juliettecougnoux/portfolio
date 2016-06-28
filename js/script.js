@@ -58,6 +58,7 @@ $(document).ready(function() {
   $("#projets-link").click(function() {
     $(".projets").addClass("active");
     $(".projets").addClass("overflow");
+    $(".cv").delay(2000).removeClass("active");
   })
   $(".right").click(function() {
     $("i").toggleClass("rotateright").delay(1000).queue(function() {
@@ -74,6 +75,7 @@ $(document).ready(function() {
   $("#cv-link").click(function() {
     $(".cv").addClass("active");
     $(".cv").addClass("overflow");
+    $(".projets").delay(2000).removeClass("active");
   })
 });
 
