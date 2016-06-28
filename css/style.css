@@ -10,10 +10,10 @@
   color: #000E10;
   font-family: "StreetvertisingMedium";
   font-size: larger;
-  border:none;
+  border: none;
   background-color: #E6F4F6;
 }
-.navbar-default .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover, button:hover{
+.navbar-default .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover, button:hover {
   color: #038A9D;
   background-color: #E6F4F6;
 }
@@ -281,8 +281,8 @@ blockquote footer {
 /* 2nd block "Skills" */
 
 #skills {
-  width:100vw;
-  height:100vh;
+  width: 100vw;
+  height: 100vh;
   background-color: #E6F4F6;
   width: 100vw;
   padding-bottom: 5%;
@@ -394,7 +394,7 @@ blockquote footer {
   border-top: 0.1em solid #000E10;
   transition: all 200ms ease-in;
   transform: scale(1.2);
-  padding : 15px;
+  padding: 15px;
 }
 .formation p {
   padding-left: 60px;
@@ -437,6 +437,78 @@ blockquote footer {
   z-index: 1000;
   margin-left: 100vw;
   background-color: #000E10;
+}
+.projets h2 {
+  font-family: "StreetvertisingBold";
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  color: #E6F4F6;
+  font-size: 24px;
+}
+.explain-text {
+  padding: 5%;
+  background-color: #E6F4F6;
+  opacity: 0;
+  height: 100%;
+  color : #000E10;
+  text-align: justify;
+  font-size: 16px;
+}
+.explain-text:hover {
+  opacity: 0.9;
+  transition: 500ms;
+}
+.explain-text h4{
+  font-family: "StreetvertisingBold";
+  background-color: #E6F4F6;
+  text-align: center;
+  font-size: 18px;s
+}
+.image {
+  border: 10px solid #000E10;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gdea {
+  background-image: url('../images/gdea.jpg');
+}
+.ucs {
+  background-image: url('../images/ucs.jpg');
+}
+.jadore {
+  background-image: url('../images/jadore.jpg');
+}
+.pam {
+  background-image: url('../images/pam.jpg');
+}
+.cocodecodec {
+  background-image: url('../images/cocodecodec.jpg');
+}
+.jj {
+  background-image: url('../images/jj.jpg');
+}
+.bowie {
+  background-image: url('../images/bowie.jpg');
+}
+.challenge {
+  background-image: url('../images/challenge.jpg');
+}
+.todo {
+  background-image: url('../images/todo.jpg');
+}
+.number {
+  background-image: url('../images/number.jpg');
+}
+.dynamite {
+  background-image: url('../images/dynamite.jpg');
+}
+.chapeau {
+  background-image: url('../images/chapeau.jpg');
+}
+.tsuru {
+  background-image: url('../images/tsuru.jpg');
 }
 
 /* Class on click */

@@ -30,6 +30,8 @@ $(document).ready(function() {
   squareThis('.circle');
   squareThis('.parent');
   squareThis('.loadingImg');
+  squareThis('.image');
+  // squareThis('.explain-text');  
   $('.cv').scroll(function() {
     $(".s1").delay(1000).fadeIn(1000);
     $(".s2").delay(1500).fadeIn(1000);
