@@ -431,6 +431,23 @@ blockquote footer {
   font-family: sans-serif;
   font-size: 14px;
 }
+.mail {
+  color: #038A9D;
+}
+.mail:hover {
+  color: #82C5CF;
+}
+.MS {
+  text-align: center;
+}
+.MS .fa {
+  color: #038A9D;
+  margin-top:5vh;
+  font-size: 30px;
+}
+.MS .fa:hover {
+  color: #82C5CF;
+}
 
 /* Custom projets page center */
 
