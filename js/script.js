@@ -209,14 +209,11 @@ $(function() {
   // myText is all the different text
 
   var container = $("#container")
-    // userText = $('#userText');
-    // var containerTitleBig = $("#containerTitleBig");
 
 
   var titleNumber = 0;
 
   function changeTitle() {
-    // if (_lng == "fr") {
     var titleArray = [
       "Communicante & Développeuse web",
       "Passionnée par la culture numérique, mon parcous l'illustre bien.",
@@ -228,19 +225,6 @@ $(function() {
       "Inventivité et rigueur, la clé de la réussite !",
       "Avec le web, l'imagination n'a plus de limite."
     ];
-    // } else {
-    // 	var titleArray = [
-    // 	"Creative Websites That Work.",
-    // 	"All round web aficionado looking to work on exciting projects",
-    // 	"Full of energy, experience, hard work and enthusiasm",
-    // 	"Always up for new challenges",
-    // 	"HTML5, CSS3, JS, PHP, MySQL, SEO and plenty still to learn",
-    // 	"I offer my expertise in the industry since 1998",
-    // 	"Looking for a double skill creative & technological ?",
-    // 	"I make bespoke web site & mobile app tailored to your needs",
-    // 	"I'm a freelance web designer & developer"
-    // 	];
-    // }
 
     var tempTitleLength = titleArray.length;
     titleNumber++;
