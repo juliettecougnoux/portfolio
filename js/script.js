@@ -31,7 +31,6 @@ $(document).ready(function() {
   squareThis('.parent');
   squareThis('.loadingImg');
   squareThis('.image');
-  // squareThis('.explain-text');  
   $('.cv').scroll(function() {
     $(".s1").delay(1000).fadeIn(1000);
     $(".s2").delay(1500).fadeIn(1000);
@@ -56,6 +55,10 @@ $(document).ready(function() {
       // }
     });
   });
+  $("#projets-link").click(function() {
+    $(".projets").addClass("active");
+    $(".projets").addClass("overflow");
+  })
   $(".right").click(function() {
     $("i").toggleClass("rotateright").delay(1000).queue(function() {
       $(".projets").addClass("active");
@@ -68,6 +71,10 @@ $(document).ready(function() {
       // }
     });
   });
+  $("#cv-link").click(function() {
+    $(".cv").addClass("active");
+    $(".cv").addClass("overflow");
+  })
 });
 
 (function($) {
