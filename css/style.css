@@ -1,29 +1,8 @@
 /* Custom base */
 
-.navbar-default {
-  background-color: #E6F4F6;
-  margin-left: 0;
-  margin-right: 0;
-  border-radius: 0;
-}
-.navbar-default .navbar-nav > li > a, .dropdown-menu > li > a, button {
-  color: #000E10;
-  font-family: "StreetvertisingMedium";
-  font-size: larger;
-  border: none;
-  background-color: #E6F4F6;
-}
-.navbar-default .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover, button:hover {
-  color: #038A9D;
-  background-color: #E6F4F6;
-}
-.navbar-default .navbar-nav > .open > a:focus {
-  background-color: #E6F4F6;
-  color: #038A9D;
-}
-.navbar-nav > li > .dropdown-menu {
-  background-color: #E6F4F6;
-}
+
+/* loader */
+
 .loader {
   background-color: #FFE5F2;
   background-position: 50% 50%;
@@ -50,6 +29,57 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*navbar1*/
+
+.navbar1 {
+  background-color: #E6F4F6;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  border-radius: 0;
+}
+.navbar-default .navbar-nav> li> a, .dropdown-menu> li> a, button {
+  color: #000E10;
+  font-family: "StreetvertisingMedium";
+  font-size: larger;
+  border: none;
+  background-color: #E6F4F6;
+}
+.navbar-default .navbar-nav> li> a:hover, .dropdown-menu> li> a:hover, button:hover {
+  color: #038A9D;
+  background-color: #E6F4F6;
+}
+.navbar-default .navbar-nav> .open> a:focus {
+  background-color: #E6F4F6;
+  color: #038A9D;
+}
+.navbar-nav> li> .dropdown-menu {
+  background-color: #E6F4F6;
+}
+
+/* navbar2 */
+
+.navbar2 {
+  background-color: #000E10;
+  border: none;
+  border-radius: 0;
+}
+.navbar2 .navbar-nav> li> a, .navbar2 .dropdown-menu> li> a, .navbar2 button {
+  color: #E6F4F6;
+  background-color: #000E10;
+}
+.navbar2 .navbar-nav> li> a:hover, .navbar2 .dropdown-menu> li> a:hover, .navbar2 button:hover {
+  color: #038A9D;
+  background-color: #000E10;
+}
+.navbar2 .navbar-nav> .open> a:focus {
+  background-color: #000E10;
+  color: #038A9D;
+}
+.navbar2 .navbar-nav> li> .dropdown-menu {
+  background-color: #000E10;
 }
 
 /* Font-face declaration*/
@@ -102,6 +132,7 @@ h1 {
   bottom: 0;
   right: 0;
   margin: auto;
+  margin-top: 5%;
   text-align: center;
   font-size: 36px;
   color: #E6F4F6;
@@ -138,15 +169,15 @@ h1 {
   font-size: 40px;
   float: none;
 }
-.fa {
-  font-size: 70px;
+.home .fa {
+  font-size: 100px;
 }
-i {
+.home i {
   transform: rotate(-46deg);
 }
 .left, .right {
   font-family: "StreetvertisingMedium";
-  font-size: 28px;
+  font-size: 24px;
   font-weight: lighter;
 }
 .left {
@@ -163,7 +194,7 @@ i {
 /* Animation of the arrow-location when click on left and right */
 
 .rotateleft {
-  animation: rotateleft 1s linear;
+  animation: rotateleft 0.5s linear;
   animation-fill-mode: forwards;
 }
 @keyframes rotateleft {
@@ -175,7 +206,7 @@ i {
   }
 }
 .rotateright {
-  animation: rotateright 1s linear;
+  animation: rotateright 0.5s linear;
   animation-fill-mode: forwards;
 }
 @keyframes rotateright {
@@ -197,8 +228,9 @@ i {
   margin-left: -100vw;
   background-color: #000E10;
   padding: 0 !important;
+  transition: 2s;
 }
-.name2 {
+.name2, name3 {
   margin: 5vh;
   height: 10vh;
 }
@@ -231,6 +263,7 @@ h2 {
   background-position: center;
   height: 70vh;
   border-radius: 20;
+  margin-bottom: 5%;
 }
 .description, .shuffleText, .citation, .description2 {
   padding: 30px;
@@ -258,7 +291,7 @@ h2 {
   text-align: justify;
   position: relative;
   padding: 0;
-  margin-top: 5%;
+  margin-top: 40px;
   margin-left: 60px;
   border: none;
 }
@@ -285,16 +318,14 @@ blockquote footer {
 
 #skills {
   width: 100vw;
-  height: 100vh;
   background-color: #E6F4F6;
-  width: 100vw;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
 }
 #skills h2 {
-  margin-top: 5%;
-  margin-bottom: 2%;
+  margin-top: 60px;
+  margin-bottom: 40px;
   color: #000E10;
 }
 #skills h3 {
@@ -302,7 +333,44 @@ blockquote footer {
 }
 .skill {
   text-align: center;
-  display: none;
+  opacity: 0;
+  margin-bottom: 30px;
+}
+.opacity {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.s1 {
+  transition-delay: 1s;
+}
+.s2 {
+  transition-delay: 1.5s;
+}
+.s3 {
+  transition-delay: 2s;
+}
+.s4 {
+  transition-delay: 2.5s;
+}
+.s5 {
+  transition-delay: 3s;
+}
+.s6 {
+  transition-delay: 3.5s;
+}
+.s7 {
+  transition-delay: 4s;
+}
+.s8 {
+  transition-delay: 4.5s;
+}
+.s9 {
+  transition-delay: 5s;
+  margin-bottom: 5%;
+}
+.s10 {
+  transition-delay: 5.5s;
+  margin-bottom: 5%;
 }
 .ico {
   height: 60px;
@@ -318,8 +386,8 @@ blockquote footer {
   width: 100vw;
 }
 .experiences h2 {
-  margin-top: 5%;
-  margin-bottom: 3%;
+  margin-top: 60px;
+  margin-bottom: 40px;
   color: #E6F4F6;
 }
 .experiences h3, .experiences h4 {
@@ -349,11 +417,12 @@ blockquote footer {
 }
 .experience:hover {
   z-index: 200000;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  /*  margin-top: 1%;
+    margin-bottom: 1%;*/
   border-top: 0.1em solid #E6F4F6;
   transition: all 200ms ease-in;
   transform: scale(1.2);
+  width: 100vw;
 }
 .experience:last-child {
   border-bottom: 0;
@@ -442,7 +511,7 @@ blockquote footer {
 }
 .MS .fa {
   color: #038A9D;
-  margin-top:5vh;
+  margin-top: 5vh;
   font-size: 30px;
 }
 .MS .fa:hover {
@@ -457,37 +526,55 @@ blockquote footer {
   height: 100vh;
   z-index: 1000;
   margin-left: 100vw;
-  background-color: #000E10;
+  background-color: #E6F4F6;
+  transition: 2s;
+}
+.name3 {
+  color: #000E10;
 }
 .projets h2 {
   font-family: "StreetvertisingBold";
   text-align: center;
   margin-bottom: 3%;
   margin-top: 2%;
-  color: #E6F4F6;
+  color: #000E10;
   font-size: 24px;
 }
 .explain-text {
   padding: 5%;
-  background-color: #E6F4F6;
+  background-color: #000E10;
   opacity: 0;
   height: 100%;
-  color : #000E10;
+  color: #E6F4F6;
   text-align: justify;
-  font-size: 16px;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 13px;
+  text-align: center;
 }
 .explain-text:hover {
   opacity: 0.9;
   transition: 500ms;
 }
-.explain-text h4{
+.explain-text h4 {
+  color: #038A9D;
   font-family: "StreetvertisingBold";
-  background-color: #E6F4F6;
-  text-align: center;
-  font-size: 18px;s
+  background-color: #000E10;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.explain-text li {
+  list-style: none;
+}
+.explain-text ul {
+  padding-left: 0;
+}
+.projets i {
+  transform: rotate(0deg);
 }
 .image {
-  border: 10px solid #000E10;
+  border: 30px solid #E6F4F6;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -531,7 +618,7 @@ blockquote footer {
 .tsuru {
   background-image: url('../images/tsuru.jpg');
 }
-#exos{
+#exos {
   height: 100vh
 }
 
@@ -589,9 +676,6 @@ blockquote footer {
   .me {
     border: none;
   }
-  #skills {
-    height: 130vh;
-  }
   .ico {
     height: 30px;
   }
@@ -599,17 +683,6 @@ blockquote footer {
     width: 300px;
     height: 150px;
   }
-}
-@media screen and (max-width: 1024px) {
-  #skills {
-    height: 100vh;
-  }
-}
-.child {
-  font-size: 20px;
-}
-.fa {
-  font-size: 60px;
 }
 
 /* Responsive: LG screen and 4K */

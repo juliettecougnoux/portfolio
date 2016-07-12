@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Juliette Cougnoux - Portfolio - Home</title>
+    <title>Juliette Cougnoux - Portfolio</title>
     <meta name="description" content="porfolio de Juliette Cougnoux">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.css"/>
@@ -18,7 +18,7 @@
 
     <div class="container cv" id="CV">
 
-      <nav class="navbar navbar-default">
+      <nav class="navbar1 navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
@@ -50,13 +50,11 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a href="#home">
-                          <button type="button" name="accueil-btn" onClick="window.location.reload()">Accueil</button>
-                        </a>
+                          <button id="particles-js-link1" type="button" name="accueil-btn">Accueil</button>
                       </li>
                       <li role="separator" class="divider"></li>
                       <li>
-                        <button id="projets-link" type="button" name="accueil-btn">Projets</button>
+                        <button id="projets-link" type="button" name="projets-btn">Projets</button>
                       </li>
                     </ul>
                   </li>
@@ -92,43 +90,46 @@
             <div class="col-xs-12 nopadding" id="comp">
               <div class="row nopadding" id="skills">
                 <h2>Mes comp<span style="font-family:sans-serif">é<span>tences</h2>
-                    <div class="skill s1 col-xs-12 col-md-7">
+                    <div class="skill s1 col-xs-12 col-md-6">
                       <h3>Systèmes d'exploitation</h3>
                       <img class="ico" src="images/os-logos.png" alt="système d'exploitation"/>
                     </div>
-                    <div class="skill s2 col-xs-12 col-md-5">
+                    <div class="skill s2 col-xs-12 col-md-6">
                       <h3>CMS</h3>
                       <img class="ico" src="images/wordpress.png" alt="Wordpress"/>
-                      <img class="ico" src="images/prestashop.png" alt="Prestashop"/>
                     </div>
-                    <div class="skill s3 col-xs-12 col-md-4">
+                    <div class="skill s3 col-xs-12 col-md-6">
                       <h3>Langages informatiques</h3>
                       <img class="ico" src="images/html.png" alt="HTML5"/>
                       <img class="ico" src="images/css.png" alt="CSS3"/>
                       <img class="ico" src="images/js.png" alt="JavaScript"/>
                     </div>
-                    <div class="skill s4 col-xs-12 col-md-8">
-                      <h3>Médias sociaux</h3>
-                      <img class="ico" src="images/rs.png" alt="Facebook, Twitter, Google +, Linkedin, Instagram, Pinterest"/>
-                    </div>
-                    <div class="skill s5 col-xs-12 col-md-4">
+                    <div class="skill s4 col-xs-12 col-md-6">
                       <h3>Logiciel de gestion de version</h3>
                       <img class="ico" src="images/github.png" alt="Github"/>
                     </div>
-                    <div class="skill s6 col-xs-12 col-md-4">
+                    <div class="skill s5 ol-xs-12 col-md-6">
+                      <h3>Médias sociaux</h3>
+                      <img class="ico" src="images/rs.png" alt="Facebook, Twitter, Google +, Linkedin, Instagram, Pinterest"/>
+                    </div>
+                    <div class="skill s6 col-xs-12 col-md-6">
+                      <h3>Langue</h3>
+                      <img class="ico" src="images/uk_flag.svg.png" alt="drapeau de l'angleterre"/>
+                    </div>
+                    <div class="skill s7 col-xs-12 col-md-6">
                       <h3>Frameworks</h3>
                       <img class="ico" src="images/sf.png" alt="Symfony"/>
                       <img class="ico" src="images/bootstrap.png" alt="Twitter Bootstrap"/>
                     </div>
-                    <div class="skill s7 col-xs-12 col-md-4">
+                    <div class="skill s8 col-xs-12 col-md-6">
                       <h3>Suite Adobe</h3>
                       <img class="ico" src="images/adobe.png" alt="Suite Adobe"/>
                     </div>
-                    <div class="skill s8 col-xs-12 col-lg-5">
+                    <div class="skill s9 col-xs-12 col-md-6">
                       <h3>Suite Mac</h3>
                       <img class="ico" src="images/mac.png" alt="Suite Mac"/>
                     </div>
-                    <div class="skill s9 col-xs-12 col-lg-7">
+                    <div class="skill s10 col-xs-12 col-md-6">
                       <h3>Suite Office</h3>
                       <img class="ico" src="images/office.png" alt="Suite Office"/>
                     </div>
@@ -298,18 +299,18 @@
                                       <span class="hidden-xs">-</span>
                                       Portfolio</h1>
                                   </div>
-                                  <div class="col-xs-push-1 col-xs-10 col-md-push-4 col-md-4 circle nopadding">
+                                  <div class="col-xs-push-1 col-xs-10 col-sm-push-4 col-sm-4 circle nopadding">
                                     <div class="col-xs-12 parent nopadding">
-                                      <div class="col-xs-5 col-md-4 child left">< CV</div>
-                                      <i class="child col-xs-2 col-md-3 fa fa-location-arrow fa-5x" aria-hidden="true"></i>
-                                      <div class="col-xs-5 child right">Projets ></div>
+                                      <div class="col-xs-4 child left">< CV</div>
+                                      <i id="arrow" class="child col-xs-4 fa fa-location-arrow fa-5x" aria-hidden="true"></i>
+                                      <div class="col-xs-4 child right">Projets ></div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
 
                               <div class="row projets" id="projets">
-                                <nav class="navbar navbar-default">
+                                <nav class="navbar2 navbar navbar-default">
                                   <div class="container-fluid">
                                     <div class="navbar-header">
                                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
@@ -334,17 +335,15 @@
                                       </ul>
                                       <ul class="nav navbar-nav navbar-right">
                                         <li class="dropdown">
-                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accueil<span class="caret"></span>
+                                          <a href="#" class="navbar2 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accueil<span class="caret"></span>
                                           </a>
                                           <ul class="dropdown-menu">
                                             <li>
-                                              <a href="#home">
-                                                <button type="button" name="accueil-btn" onClick="window.location.reload()">Accueil</button>
-                                              </a>
+                                                <button id="particles-js-link2" type="button" name="accueil-btn">Accueil</button>
                                             </li>
                                             <li role="separator" class="divider"></li>
                                             <li>
-                                              <button id="cv-link" type="button" name="accueil-btn">CV</button>
+                                              <button id="cv-link" type="button" name="cv-btn">CV</button>
                                             </li>
                                           </ul>
                                         </li>
@@ -354,63 +353,74 @@
                                 </nav>
 
                                 <div class="col-xs-12">
-                                  <h1 class="name2">
+                                  <h1 class="name3">
                                     Projets</h1>
                                   <div class="row nopadding" id="cms">
                                     <h2>CMS</h2>
-                                    <a href="http://gdea13.fr/">
+                                    <a href="http://gdea13.fr/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 gdea image">
                                         <div class="explain-text">
                                           <h4>GDEA 13</h4>
                                           <p>
                                             Site internet de type vitrine fait pour le Groupement d'Employeurs Associatifs des Bouches-du-Rhône.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>Wordpress</li>
-                                              <li>JavaScript</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ Wordpress</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ JavaScript</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://www.ucs13.fr/">
+                                    <a href="http://www.ucs13.fr/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 ucs image">
                                         <div class="explain-text">
                                           <h4>UCS 13</h4>
                                           <p>
                                             Site internet de type blog fait pour l'Union des Centres Sociaux des Bouches-du-Rhône.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>Wordpress</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ Wordpress</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://xn--a-jadore-r0a.com/">
+                                    <a href="http://xn--a-jadore-r0a.com/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 jadore image">
                                         <div class="explain-text">
                                           <h4>
-                                            <span style="font-family:sans-serif">Ç</span>
+                                            <span style="font-family:sans-serif">Ç</span>a
                                             ! J'adore...
                                           </h4>
                                           <p>
                                             Site internet de type vitrine fait pour la boutique de prêt-à-porter féminin "Ça J'adore".
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>Wordpress</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ Wordpress</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
@@ -419,121 +429,162 @@
                                   </div>
                                   <div class="row nopadding" id="nat">
                                     <h2>Natifs et Frameworks</h2>
-                                    <a href="http://pam-pepaca.fr/">
+                                    <a href="http://pam-pepaca.fr/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 pam image">
                                         <div class="explain-text">
                                           <h4>PAM</h4>
                                           <p>
                                             Site internet fait pour le Portail des Actualités Mutualisées de Pôle Emploi.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>PHP (Symfony)</li>
-                                              <li>SQL</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ PHP (Symfony)</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ SQL</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML (TWIG)</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ JavaScript</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Vues</li>
-                                              <li>Recherche d'événements</li>
-                                              <li>Affichage des événements</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Vues</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Recherche d'événements</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Affichage des événements</li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://karine-jamet.github.io/tsuyunomonogatari/">
+                                    <a href="http://karine-jamet.github.io/tsuyunomonogatari/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 tsuru image">
                                         <div class="explain-text">
                                           <h4>Tsuro No Monogatari</h4>
                                           <p>
                                             Jeu dirigé à l'aide de la web cam fait créé à l'occasion de l'AfterWork de SIMPLonMARS.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS</li>
-                                              <li>JavaScript</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ JavaScript</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Inscription du joueur</li>
-                                              <li>Sauvegarde des scores</li>
-                                              <li>insertion des sons au moment de l'impact
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Inscription du joueur</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sauvegarde des scores</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Insertion des sons au moment de l'impact
                                               </li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://co-code-codec.github.io/">
+                                    <a href="http://co-code-codec.github.io/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 cocodecodec image">
                                         <div class="explain-text">
                                           <h4>Co-Code-Codec</h4>
                                           <p>
                                             Site internet fait pour présenter une équipe, la première semaine de formation SIMPLonMARS.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Un peu de chaque</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Un peu de chaque</li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://juliettecougnoux.github.io/bootstrap/">
+                                    <a href="http://juliettecougnoux.github.io/bootstrap/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 jj image">
                                         <div class="explain-text">
                                           <h4>Bootstrap</h4>
                                           <p>
-                                            Site internet fait pour apprendre à maîtriser Twitter Bootstrap
-                                            <strong>Technologies :</strong>
+                                            Site internet fait pour apprendre à maîtriser Twitter Bootstrap.
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS (Twitter Bootstrap)</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS (Twitter Bootstrap)</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://juliettecougnoux.github.io/google/">
+                                    <a href="http://juliettecougnoux.github.io/google/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 bowie image">
                                         <div class="explain-text">
                                           <h4>Bowie</h4>
                                           <p>
                                             Site internet fait pour apprendre l'intégration.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://juliettecougnoux.github.io/challenge-interpromo/">
+                                    <a href="http://juliettecougnoux.github.io/challenge-interpromo/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-4 challenge image">
                                         <div class="explain-text">
                                           <h4>Challenge interpromo</h4>
                                           <p>
                                             Site internet fait à l'occasion du challenge inter-promos de SIMPLon.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
@@ -542,21 +593,28 @@
                                   </div>
                                   <div class="row-xs-12 nopadding" id="exos">
                                     <h2>Exercices</h2>
-                                    <a href="http://juliettecougnoux.github.io/TodoMVC/">
+                                    <a href="http://juliettecougnoux.github.io/TodoMVC/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-6 todo image">
                                         <div class="explain-text">
                                           <h4>Todo MVC</h4>
                                           <p>
                                             Site internet fait pour apprendre le JQuery.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS</li>
-                                              <li>JQuery</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ JQuery</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
@@ -568,60 +626,83 @@
                                           <h4>Number</h4>
                                           <p>
                                             Mise en place de fonctionnalités JavaScript avec de l'intégration web.
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS</li>
-                                              <li>JQuery</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ JQuery</li>
                                             </ul>
-                                            <strong>Parties faites :</strong>
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://dynamiteballs.github.io/">
+                                    <a href="http://dynamiteballs.github.io/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-6 dynamite image">
                                         <div class="explain-text">
                                           <h4>Dynamite Balls</h4>
                                           <p>
-                                            Jeu fait en javascript.
-                                            <strong>Technologies :</strong>
+                                            Mini jeu fait à l'aide du framework Paper.js.
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS</li>
-                                              <li>JQuery</li>
-                                              <li>Paper JS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ JQuery</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ Paper.js</li>
                                             </ul>
-                                            Parties faites :
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>La vue</li>
-                                              <li>Le comteur de points</li>
-                                              <li>Le compte à rebours</li>
-                                              <li>Le mouvement aléatoire de la balle</li>
-                                              <li>L'apparition de la nouvelle balle à un point aléatoire</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Vue</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Comteur de points</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Compte à rebours</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Mouvement aléatoire de la balle</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Apparition de la nouvelle balle à un point aléatoire</li>
                                             </ul>
                                           </p>
                                         </div>
                                       </div>
                                     </a>
-                                    <a href="http://juliettecougnoux.github.io/magic-hat/">
+                                    <a href="http://juliettecougnoux.github.io/magic-hat/" target="_blank">
                                       <div class="nopadding col-xs-12 col-md-6 chapeau image">
                                         <div class="explain-text">
                                           <h4>Le Chapeau magique</h4>
                                           <p>
                                             Mise en place de fonctionnalités JavaScript avec de l'intégration web. But : tirer des noms de personnes au sort pour former des groupes de façon aléatoire à SIMPLonMARS
-                                            <strong>Technologies :</strong>
+                                            <br>
+                                            <h4>Technologies :</h4>
                                             <ul>
-                                              <li>HTML</li>
-                                              <li>CSS</li>
-                                              <li>JQuery</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ HTML</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ CSS</li>
+                                              <li><i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+ JQuery</li>
                                             </ul>
-                                            Parties faites :
+                                            <h4>Parties faites :</h4>
                                             <ul>
-                                              <li>Toutes</li>
+                                              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Toutes</li>
                                             </ul>
                                           </p>
                                         </div>
