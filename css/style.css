@@ -534,7 +534,7 @@ blockquote footer {
     color: #82C5CF;
 }
 .footer p {
-  margin-top: 70px;
+    margin-top: 70px;
     text-align: center;
     color: #82C5CF;
 }
@@ -701,9 +701,20 @@ blockquote footer {
     }
 }
 
+/* Responsive: XS screen and 4K */
+
+@media screen and (min-width: 200px) {
+    .left, .right {
+        font-size: 14px;
+    }
+    .julietteImg {
+      height: 30vh;
+    }
+}
+
 /* Responsive: MD screen and 4K */
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 959px) {
     .ss-contact {
         margin-top: 50px;
     }
@@ -711,7 +722,7 @@ blockquote footer {
 
 /* Responsive: 1140px */
 
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 1139px) {
     .left, .right {
         font-size: 18px
     }
@@ -719,7 +730,7 @@ blockquote footer {
 
 /* Responsive: LG screen and 4K */
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1919px) {
     .circle {
         top: 18vh;
     }
