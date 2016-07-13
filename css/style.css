@@ -517,11 +517,11 @@ blockquote footer {
   background-image:         linear-gradient(to bottom, #dff0d8 0%, #E6F4F6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#E6F4F6', GradientType=0);
   background-repeat: repeat-x;
-  border-color: #E6F4F6;
+  border-color: #b2dba1;
 }
 .adresse {
     text-align: center;
-    color: #038A9D;
+    color: #E6F4F6;
     font-family: sans-serif;
     font-size: 14px;
 }
