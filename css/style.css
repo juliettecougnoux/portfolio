@@ -70,8 +70,8 @@
 .navbar-default .navbar-toggle {
     border-color: #000E10;
 }
-.navbar-nav > li {
-  padding-right: 15px;
+.navbar-nav> li {
+    padding-right: 15px;
 }
 
 /* navbar2 */
@@ -280,7 +280,7 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70vh;
+    height: 50vh;
     border-radius: 20;
     margin-bottom: 30px;
 }
@@ -495,31 +495,32 @@ blockquote footer {
 
 .contact {
     background-color: #000E10;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
     width: 100vw;
     height: 100vh
 }
 .contact h2 {
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     color: #E6F4F6;
 }
+.ss-contact {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+#message {
+    height: 153px;
+}
 .adresse {
-    padding: 30px;
-    padding-top: 10%;
-    padding-left: 10%;
-    text-align: justify;
+    text-align: center;
     color: #E6F4F6;
     font-family: sans-serif;
     font-size: 14px;
 }
-.mail {
-    color: #038A9D;
+.adresse .row {
+    line-height: 50px;
 }
-.mail:hover {
-    color: #82C5CF;
+.adresse .row:first-child {
+    padding-top: 60px;
 }
 .MS {
     text-align: center;
@@ -530,6 +531,11 @@ blockquote footer {
     font-size: 30px;
 }
 .MS .fa:hover {
+    color: #82C5CF;
+}
+.footer p {
+  margin-top: 70px;
+    text-align: center;
     color: #82C5CF;
 }
 
@@ -667,10 +673,6 @@ blockquote footer {
         width: 100vw;
         height: 100vh;
         background: #000E10;
-        overflow-y: scroll;
-    }
-    canvas {
-        overflow-y: scroll;
     }
     /* home page */
     .circle {
@@ -693,8 +695,25 @@ blockquote footer {
         height: 30px;
     }
     iframe {
+        text-align: center;
         width: 300px;
         height: 150px;
+    }
+}
+
+/* Responsive: MD screen and 4K */
+
+@media screen and (max-width: 960px) {
+    .ss-contact {
+        margin-top: 50px;
+    }
+}
+
+/* Responsive: 1140px */
+
+@media screen and (max-width: 1140px) {
+    .left, .right {
+        font-size: 18px
     }
 }
 
