@@ -26,21 +26,24 @@ function squareThis(element, ratio, minLimit) {
     }
 }
 
+
 $(document).ready(function() {
     squareThis('.circle');
     squareThis('.parent');
     squareThis('.loadingImg');
     squareThis('.image');
+    setTimeout(function(){ window.scrollTo(0,0)},1000);//TODO améliorer c'est un peu de la bidouille
+
     $('.cv').scroll(function() {
         $(".s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10").addClass("opacity");
         $(".navbar1").addClass("navbar-fixed-top");
-        $(".cv h1").css("padding-top", "5%");
-        $(".cv h1").css("padding-bottom", "3%");
+        $(".cv h1").css("padding-top", "80px");
+        $(".cv h1").css("padding-bottom", "40px");
     });
     $('.projets').scroll(function() {
         $(".navbar2").addClass("navbar-fixed-top");
-        $(".projets h1").css("padding-top", "5%");
-        $(".projets h1").css("padding-bottom", "3%");
+        $(".projets h1").css("padding-top", "80px");
+        $(".projets h1").css("padding-bottom", "40px");
     });
     $(".loader").delay(1000).fadeOut(2000);
 
