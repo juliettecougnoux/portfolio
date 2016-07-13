@@ -1,6 +1,5 @@
 /* Custom base */
 
-
 /* loader */
 
 .loader {
@@ -117,6 +116,9 @@
     font-family: StreetvertisingLight;
     src: url(fonts/StreetvertisingLight.ttf);
 }
+
+/* body html */
+
 html, body {
     width: 99.9vw;
     height: 99.9vh;
@@ -159,7 +161,6 @@ h1 {
 
 /* Custom home page center */
 
-
 /* The circle... */
 
 .circle {
@@ -176,7 +177,6 @@ h1 {
 
 .parent {
     vertical-align: middle;
-    /* vertical alignment of the inline element */
     display: table;
     table-layout: fixed;
 }
@@ -503,21 +503,27 @@ blockquote footer {
     margin-bottom: 60px;
     color: #E6F4F6;
 }
-.ss-contact {
-    padding-left: 150px;
-    padding-right: 150px;
+.map-contact {
+  padding-left: 100px;
+  padding-right: 50px;
+}
+.form-contact {
+  padding-right: 100px;
+  padding-left: 50px;
 }
 #message {
     height: 153px;
 }
-.alert-success {
-  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #E6F4F6 100%);
-  background-image:      -o-linear-gradient(top, #dff0d8 0%, #E6F4F6 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#E6F4F6));
-  background-image:         linear-gradient(to bottom, #dff0d8 0%, #E6F4F6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#E6F4F6', GradientType=0);
-  background-repeat: repeat-x;
-  border-color: #b2dba1;
+.btn-xl {
+  width : 200px;
+  color: #000E10;
+}
+.btn-xl:hover {
+  color: #038A9D;
+}
+.form-control {
+  background-color: #E6F4F6;
+  color: #000E10;
 }
 .adresse {
     text-align: center;
