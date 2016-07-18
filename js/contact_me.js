@@ -33,7 +33,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Votre message à bien était envoyé. </strong>");
+                        .append("<strong>Votre message a bien été envoyé. </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -45,7 +45,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Désolée " + firstName + ", le serveur de messagerie ne fonctionne pas. Veuillez essayer plus tard!");
+                    $('#success > .alert-danger').append("<strong>Désolée " + firstName + ", le serveur de messagerie ne fonctionne pas. Veuillez essayer plus tard.");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
