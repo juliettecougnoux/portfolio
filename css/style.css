@@ -513,10 +513,10 @@ blockquote footer {
     height: 153px;
 }
 .form-control {
-  border-radius: 0;
+    border-radius: 0;
 }
 .btn-xl {
-  border-radius: 0;
+    border-radius: 0;
 }
 .adresse {
     text-align: center;
@@ -529,6 +529,17 @@ blockquote footer {
 }
 .adresse .row:first-child {
     padding-top: 60px;
+}
+.cv-pdf {
+    text-align: center;
+    color: #038A9D;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 18px
+}
+.cv-pdf:hover {
+    color: #E6F4F6;
 }
 .MS {
     text-align: center;
