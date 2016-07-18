@@ -519,6 +519,14 @@ blockquote footer {
 .btn-xl {
   border-radius: 0;
 }
+.alert-success{
+  color: #000E10 !important;
+  background-color: #E6F4F6 !important;
+  border-radius: 0 !important;
+}
+.alert-danger{
+  border-radius: 0 !important;
+}
 .adresse {
   text-align: center;
   color: #E6F4F6;
