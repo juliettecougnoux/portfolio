@@ -515,6 +515,8 @@ blockquote footer {
 }
 .form-control {
   border-radius: 0;
+  background-color: #E6F4F6;
+  color:#000E10;
 }
 .btn-xl {
   border-radius: 0;
