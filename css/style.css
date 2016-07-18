@@ -1,5 +1,6 @@
 /* Custom base */
 
+
 /* loader */
 
 .loader {
@@ -116,9 +117,6 @@
     font-family: StreetvertisingLight;
     src: url(fonts/StreetvertisingLight.ttf);
 }
-
-/* body html */
-
 html, body {
     width: 99.9vw;
     height: 99.9vh;
@@ -161,6 +159,7 @@ h1 {
 
 /* Custom home page center */
 
+
 /* The circle... */
 
 .circle {
@@ -177,6 +176,7 @@ h1 {
 
 .parent {
     vertical-align: middle;
+    /* vertical alignment of the inline element */
     display: table;
     table-layout: fixed;
 }
@@ -360,35 +360,35 @@ blockquote footer {
     transition: opacity 1s;
 }
 .s1 {
-    transition-delay: 1s;
+    transition-delay: 0.5;
 }
 .s2 {
-    transition-delay: 1.5s;
+    transition-delay: 1s;
 }
 .s3 {
-    transition-delay: 2s;
+    transition-delay: 1.5s;
 }
 .s4 {
-    transition-delay: 2.5s;
+    transition-delay: 2s;
 }
 .s5 {
-    transition-delay: 3s;
+    transition-delay: 2.5s;
 }
 .s6 {
-    transition-delay: 3.5s;
+    transition-delay: 3s;
 }
 .s7 {
-    transition-delay: 4s;
+    transition-delay: 3.5s;
 }
 .s8 {
-    transition-delay: 4.5s;
+    transition-delay: 4s;
 }
 .s9 {
-    transition-delay: 5s;
+    transition-delay: 4.5s;
     margin-bottom: 30px;
 }
 .s10 {
-    transition-delay: 5.5s;
+    transition-delay: 5s;
     margin-bottom: 30px;
 }
 .ico {
@@ -424,7 +424,7 @@ blockquote footer {
     background-color: #000E10;
     color: #E6F4F6;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     border-bottom: 0.1em solid #E6F4F6;
     transition: all 200ms ease-in;
@@ -438,7 +438,7 @@ blockquote footer {
     z-index: 200000;
     border-top: 0.1em solid #E6F4F6;
     transition: all 200ms ease-in;
-    transform: scale(1.2);
+    transform: scale(1.1);
     width: 100vw;
 }
 .experience:last-child {
@@ -452,6 +452,8 @@ blockquote footer {
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: sans-serif;
+    font-size: 13px;
     color: #000E10;
     width: 100vw;
 }
@@ -480,7 +482,7 @@ blockquote footer {
     z-index: 200000;
     border-top: 0.1em solid #000E10;
     transition: all 200ms ease-in;
-    transform: scale(1.2);
+    transform: scale(1.1);
     padding: 15px;
 }
 .formation p {
@@ -503,27 +505,21 @@ blockquote footer {
     margin-bottom: 60px;
     color: #E6F4F6;
 }
-.map-contact {
-  padding-left: 100px;
-  padding-right: 50px;
-}
-.form-contact {
-  padding-right: 100px;
-  padding-left: 50px;
+.ss-contact {
+    padding-left: 150px;
+    padding-right: 150px;
 }
 #message {
     height: 153px;
 }
-.btn-xl {
-  width : 200px;
-  color: #000E10;
-}
-.btn-xl:hover {
-  color: #038A9D;
-}
-.form-control {
-  background-color: #E6F4F6;
-  color: #000E10;
+.alert-success {
+  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #E6F4F6 100%);
+  background-image:      -o-linear-gradient(top, #dff0d8 0%, #E6F4F6 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#E6F4F6));
+  background-image:         linear-gradient(to bottom, #dff0d8 0%, #E6F4F6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#E6F4F6', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #b2dba1;
 }
 .adresse {
     text-align: center;
