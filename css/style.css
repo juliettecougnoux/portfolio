@@ -735,6 +735,9 @@ blockquote footer {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .shuffleText {
+    height:80px;
+  }
 }
 
 /* Responsive: 1140px */
